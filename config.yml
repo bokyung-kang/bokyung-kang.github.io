@@ -1,0 +1,93 @@
+baseURL: "https://bokyung-kang.github.io/"
+title: Bokyung's Note
+paginate: 5
+theme: PaperMod
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+defaultContentLanguage: ko
+enableEmoji: true
+
+minify:
+  disableXML: true
+languages:
+  ko:
+    languageName: ko
+    weight: 1
+    #homeInfoParams:
+    #  Title: "조금씩 꾸준히 \U0001F319"
+    menu:
+      main:
+        - name: Archive
+          url: archives/
+          weight: 5
+        - name: Tags
+          url: tags/
+          weight: 10
+        - name: Search
+          url: search/
+          weight: 10
+  ja:
+    languageName: ja
+    weight: 2
+    #homeInfoParams:
+    #  Title: "少しずつコツコツ \U0001F319"
+    menu:
+      main:
+        - name: Archive
+          url: archives/
+          weight: 5
+        - name: Tags
+          url: tags/
+          weight: 10
+        - name: Search
+          url: search/
+          weight: 10
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+params:
+  env: production
+  author: bokyung
+  defaultTheme: auto
+  disableThemeToggle: true
+  disableSpecial1stPost: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowToc: true
+  TocOpen: true
+  comments: true
+  socialIcons:
+    - name: github
+      url: 'https://github.com/bokyung-kang'
+  label:
+    icon: /images/main_icon.jpg
+  assets:
+    favicon: '/favicon.ico' 
+taxonomies:
+  category: categories
+  tag: tags
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+  instagram:
+    disabled: false
+    simple: true
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
