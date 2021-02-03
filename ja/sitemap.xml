@@ -122,20 +122,6 @@
   </url>
   
   <url>
-    <loc>https://bokyung-kang.github.io/ja/archives/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://bokyung-kang.github.io/archives/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://bokyung-kang.github.io/ja/archives/"
-                />
-  </url>
-  
-  <url>
     <loc>https://bokyung-kang.github.io/ja/categories/</loc>
     <xhtml:link
                 rel="alternate"
