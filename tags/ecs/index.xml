@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ECS on Bokyung&#39;s Note</title>
+    <link>https://bokyung-kang.github.io/tags/ecs/</link>
+    <description>Recent content in ECS on Bokyung&#39;s Note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung-kang.github.io/tags/ecs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CircleCI의 Contexts를 이용하여 AWS ECS 자동 배포하기</title>
+      <link>https://bokyung-kang.github.io/2021/02/02/clrcleci-ecs-deploy/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bokyung-kang.github.io/2021/02/02/clrcleci-ecs-deploy/</guid>
+      <description>springboot + kotlin으로 개발한 backendAPI를 CircleCI로 배포하고 있습니다. staging/production 환경별 환경변수를 Contexts를 이용하면 좀 더 편리하게 설정할 수 있습니다.
+Contexts 설정 Organization Settings &amp;gt; Contexts 에서 서비스의 각 환경별 환경변수를 설정합니다. staging/production 환경 이름으로 등록했습니다. staging 환경의 환경변수입니다. ecr와 ecs용 orbs를 이용하기 위해서 AWS 환경변수를 추가하고 프로젝트에서 공통으로 사용하기 위해서 SERVICE_PREFIX를 추가했습니다. CircleCI config.yml 설정 build-and-push-image  backend-build를 실행합니다. release 브랜치인 경우 build-and-push-image-staging을 실행합니다. master 브랜치인 경우 build-and-push-image-production을 실행합니다. context에는 CircleCI Contexts에서 지정한 이름을 추가합니다.</description>
+    </item>
+    
+  </channel>
+</rss>

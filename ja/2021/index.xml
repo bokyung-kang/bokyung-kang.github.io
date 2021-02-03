@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2021s on Bokyung&#39;s Note</title>
+    <link>https://bokyung-kang.github.io/ja/2021/</link>
+    <description>Recent content in 2021s on Bokyung&#39;s Note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung-kang.github.io/ja/2021/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CircleCIのContextsを利用し、AWS ECSへデプロイする</title>
+      <link>https://bokyung-kang.github.io/ja/2021/02/02/clrcleci-ecs-deploy/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bokyung-kang.github.io/ja/2021/02/02/clrcleci-ecs-deploy/</guid>
+      <description>springboot + kotlinで開発したbackendAPIをCircleCIを利用してデプロイしています。 staging/production環境毎の環境変数はContextsを利用すればもっと簡単に設定することが可能です。
+Contexts設定 Organization Settings &amp;gt; Contexts でサービスの各環境毎の環境変数を設定します。 staging/productionの環境名で追加しました。 staging環境の環境変数です。 ecrとecsのorbsを利用するため、AWSの環境変数を追加し、プロジェクト内で共通で利用するためにSERVICE_PREFIXを追加しました。 CircleCI config.yml 設定 build-and-push-image  backend-buildを実行します。 releaseブランチの場合、build-and-push-image-stagingを実行します。 masterブランチの場合、build-and-push-image-productionを実行します。 contextにはCircleCI Contextsで指定した名前を指定します。  version: 2.1 orbs: aws-ecr: circleci/aws-ecr@6.15.3 aws-ecs: circleci/aws-ecs@1.4.0 gradle: circleci/gradle@2.2.0 executors: openjdk-executor: docker: - image: circleci/openjdk:14-jdk-buster-node-browsers ..... jobs: backend-build: executor: openjdk-executor ..... workflows: build-deploy: jobs: - backend-build - aws-ecr/build-and-push-image: name: build-and-push-image-staging requires: - backend-build context: DEMO_STAGING attach-workspace: true checkout: false repo: &amp;#39;${SERVICE_PREFIX}&amp;#39; tag: &amp;#39;latest,${CIRCLE_SHA1}&amp;#39; filters: branches: only: - /release\/.</description>
+    </item>
+    
+  </channel>
+</rss>
