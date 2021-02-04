@@ -9,6 +9,7 @@ buildFuture: false
 buildExpired: false
 defaultContentLanguage: ko
 enableEmoji: true
+googleAnalytics: G-6M06WW5T62
 
 minify:
   disableXML: true
