@@ -9,7 +9,7 @@ buildFuture: false
 buildExpired: false
 defaultContentLanguage: ko
 enableEmoji: true
-googleAnalytics: G-6M06WW5T62
+googleAnalytics: UA-188954887-1
 
 minify:
   disableXML: true
