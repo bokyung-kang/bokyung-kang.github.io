@@ -11,6 +11,9 @@ defaultContentLanguage: ko
 enableEmoji: true
 googleAnalytics: UA-188954887-1
 
+googleAnalytics: G-2FXFGPJH14
+
+
 minify:
   disableXML: true
 languages:
@@ -70,6 +73,7 @@ params:
     icon: /images/main_icon.jpg
   assets:
     favicon: '/favicon.ico' 
+  googleTagManager: GTM-KTQ8KCW
 taxonomies:
   category: categories
   tag: tags
