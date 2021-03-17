@@ -5,13 +5,22 @@
     <link>https://bokyung-kang.github.io/ja/tags/</link>
     <description>Recent content in Tags on Bokyung&#39;s Note</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung-kang.github.io/ja/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung-kang.github.io/ja/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AWS</title>
       <link>https://bokyung-kang.github.io/ja/tags/aws/</link>
-      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 17 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://bokyung-kang.github.io/ja/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jenkins</title>
+      <link>https://bokyung-kang.github.io/ja/tags/jenkins/</link>
+      <pubDate>Wed, 17 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bokyung-kang.github.io/ja/tags/jenkins/</guid>
       <description></description>
     </item>
     

@@ -5,7 +5,17 @@
     <link>https://bokyung-kang.github.io/tags/aws/</link>
     <description>Recent content in AWS on Bokyung&#39;s Note</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung-kang.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung-kang.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Amazon Linux2에 Jenkins 설치하기</title>
+      <link>https://bokyung-kang.github.io/2021/03/17/jenkins-install/</link>
+      <pubDate>Wed, 17 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bokyung-kang.github.io/2021/03/17/jenkins-install/</guid>
+      <description>로컬 도커환경에서 Jenkins를 테스트 하던 중에 에러가 나는 경우가 있어서 검증을 위해서 Amazon Linux2에 Jenkins를 설치 해 보았습니다.
+EC2 인스턴스 생성 및 Jenkins설치 EC2 인스턴스 생성 및 보안그룹 설정   맨위에 표시되는 AMI로 생성했습니다.   젠킨스 접속용 8080포트와 SSH접속용 22번 포트를 설정합니다.   Jenkins 설치  Jenkins 공홈 설치 방법 에 나와있는 순서대로 설치하였습니다.  sudo wget -O /etc/yum.repos.d/jenkins.repo \ https://pkg.jenkins.io/redhat-stable/jenkins.repo sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key sudo yum upgrade sudo yum install jenkins java-1.</description>
+    </item>
+    
     <item>
       <title>CircleCI의 Contexts를 이용하여 AWS ECS 자동 배포하기</title>
       <link>https://bokyung-kang.github.io/2021/02/02/clrcleci-ecs-deploy/</link>
