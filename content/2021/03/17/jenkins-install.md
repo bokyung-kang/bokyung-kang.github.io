@@ -7,6 +7,13 @@ author: "bokyung"
 
 로컬 도커환경에서 Jenkins를 테스트 하던 중에 에러가 나는 경우가 있어서 검증을 위해서 Amazon Linux2에 Jenkins를 설치 해 보았습니다.
 
+## 설치한 Jenkins 환경
+* Amazon Linux2
+  * AMI ID : ami-0f27d081df46f326c
+  * AMI 이름 : amzn2-ami-hvm-2.0.20210303.0-x86_64-gp2
+* Jenkins
+  * version : Jenkins 2.284
+
 ## EC2 인스턴스 생성 및 Jenkins설치
 ### EC2 인스턴스 생성 및 보안그룹 설정
 * 맨위에 표시되는 AMI로 생성했습니다.

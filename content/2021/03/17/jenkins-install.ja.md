@@ -7,6 +7,13 @@ author: "bokyung"
 
 ローカル環境でJenkinsを試しましたが、エラーになるケールがあったため、検証のために、Amazon Linux2にJenkinsをインストールしてみました。
 
+## 構築するJenkinsの環境
+* Amazon Linux2
+  * AMI ID : ami-0f27d081df46f326c
+  * AMI名 : amzn2-ami-hvm-2.0.20210303.0-x86_64-gp2
+* Jenkins
+  * version : Jenkins 2.284
+
 ## EC2インスタンス作成及びJenkinsインストール
 ### EC2インスタンス作成ととセキュリティグループ設定
 * 一番上に表示されているAMIを利用して作成しました。
