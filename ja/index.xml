@@ -5,7 +5,17 @@
     <link>https://bokyung-kang.github.io/ja/</link>
     <description>Recent content on Bokyung&#39;s Note</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 17 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung-kang.github.io/ja/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung-kang.github.io/ja/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jenkins環境でSpring BatchプロジェクトをGradleビルドする</title>
+      <link>https://bokyung-kang.github.io/ja/2021/03/30/jenkins-gradle-build/</link>
+      <pubDate>Tue, 30 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bokyung-kang.github.io/ja/2021/03/30/jenkins-gradle-build/</guid>
+      <description>Spring BatchのJob Runnerを調査していましたが、その中でJenkinsでgradleビルドをしてみました。
+Jenkinsの環境  Amazon Linux2  AMI ID : ami-0f27d081df46f326c AMI名 : amzn2-ami-hvm-2.0.20210303.0-x86_64-gp2   Jenkins  version : Jenkins 2.284    認証情報登録 Github ID/PASSWORD認証方法   JenkinsでRepository関連作業ができるようにGithub上でPersonal access tokensを発行します。 ( Settings &amp;gt; Developer settings &amp;gt; Personal access tokens )   Manage Jenkins &amp;gt; Manage Credentials &amp;gt; domainにあるglobalをクリックします。   KindはUsername with passwordを選び、パスワード欄にはPersonal access tokens値を入力し認証情報を追加します。   Github SSH 認証方法   SSH鍵を作成します。   Githubプロジェクト設定のDeploy keysに公開鍵を追加します。   KindはSSH Username with private keyを選び、Private Key &amp;gt; Enter directlyに秘密鍵を追加します。   Gradle, JDK設定  プロジェクトで利用するGradleとJDKを Manage Jenkins &amp;gt; System Configuration &amp;gt; Global Tool Configurationにて設定します。一つのバージョンのみ設定した場合は、各JOBでデフォルトとして設定されます。複数のバージョンが登録されている場合は、JOB設定時バージョンを選べられます。   Job登録   New Item &amp;gt; Freestyle projectを選び、JOBを登録します。github access tokens認証の場合は、Repository URLに git@github.</description>
+    </item>
+    
     <item>
       <title>Amazon Linux2にJenkinsをインストールする</title>
       <link>https://bokyung-kang.github.io/ja/2021/03/17/jenkins-install/</link>

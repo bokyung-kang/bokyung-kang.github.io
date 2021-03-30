@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://bokyung-kang.github.io/ja/2021/</loc>
-    <lastmod>2021-03-17T00:00:00+00:00</lastmod>
+    <lastmod>2021-03-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -13,6 +13,97 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://bokyung-kang.github.io/ja/2021/"
+                />
+  </url><url>
+    <loc>https://bokyung-kang.github.io/ja/tags/aws/</loc>
+    <lastmod>2021-03-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://bokyung-kang.github.io/tags/aws/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bokyung-kang.github.io/ja/tags/aws/"
+                />
+  </url><url>
+    <loc>https://bokyung-kang.github.io/ja/</loc>
+    <lastmod>2021-03-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://bokyung-kang.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bokyung-kang.github.io/ja/"
+                />
+  </url><url>
+    <loc>https://bokyung-kang.github.io/ja/tags/gradle/</loc>
+    <lastmod>2021-03-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://bokyung-kang.github.io/tags/gradle/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bokyung-kang.github.io/ja/tags/gradle/"
+                />
+  </url><url>
+    <loc>https://bokyung-kang.github.io/ja/tags/jenkins/</loc>
+    <lastmod>2021-03-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://bokyung-kang.github.io/tags/jenkins/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bokyung-kang.github.io/ja/tags/jenkins/"
+                />
+  </url><url>
+    <loc>https://bokyung-kang.github.io/ja/2021/03/30/jenkins-gradle-build/</loc>
+    <lastmod>2021-03-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://bokyung-kang.github.io/2021/03/30/jenkins-gradle-build/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bokyung-kang.github.io/ja/2021/03/30/jenkins-gradle-build/"
+                />
+  </url><url>
+    <loc>https://bokyung-kang.github.io/ja/tags/spring/</loc>
+    <lastmod>2021-03-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://bokyung-kang.github.io/tags/spring/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bokyung-kang.github.io/ja/tags/spring/"
+                />
+  </url><url>
+    <loc>https://bokyung-kang.github.io/ja/tags/</loc>
+    <lastmod>2021-03-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://bokyung-kang.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bokyung-kang.github.io/ja/tags/"
                 />
   </url><url>
     <loc>https://bokyung-kang.github.io/ja/2021/03/17/jenkins-install/</loc>
@@ -26,58 +117,6 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://bokyung-kang.github.io/ja/2021/03/17/jenkins-install/"
-                />
-  </url><url>
-    <loc>https://bokyung-kang.github.io/ja/tags/aws/</loc>
-    <lastmod>2021-03-17T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://bokyung-kang.github.io/tags/aws/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://bokyung-kang.github.io/ja/tags/aws/"
-                />
-  </url><url>
-    <loc>https://bokyung-kang.github.io/ja/</loc>
-    <lastmod>2021-03-17T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://bokyung-kang.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://bokyung-kang.github.io/ja/"
-                />
-  </url><url>
-    <loc>https://bokyung-kang.github.io/ja/tags/jenkins/</loc>
-    <lastmod>2021-03-17T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://bokyung-kang.github.io/tags/jenkins/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://bokyung-kang.github.io/ja/tags/jenkins/"
-                />
-  </url><url>
-    <loc>https://bokyung-kang.github.io/ja/tags/</loc>
-    <lastmod>2021-03-17T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://bokyung-kang.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://bokyung-kang.github.io/ja/tags/"
                 />
   </url><url>
     <loc>https://bokyung-kang.github.io/ja/tags/circleci/</loc>
