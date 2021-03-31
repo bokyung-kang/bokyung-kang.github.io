@@ -5,15 +5,26 @@
     <link>https://bokyung-kang.github.io/ja/tags/jenkins/</link>
     <description>Recent content in Jenkins on Bokyung&#39;s Note</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 30 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung-kang.github.io/ja/tags/jenkins/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung-kang.github.io/ja/tags/jenkins/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jenkins環境でSpring Batch Jobを実行する</title>
+      <link>https://bokyung-kang.github.io/ja/2021/03/31/jenkins-batch-job/</link>
+      <pubDate>Wed, 31 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bokyung-kang.github.io/ja/2021/03/31/jenkins-batch-job/</guid>
+      <description>JenkinsでSpring Batch Jobを実行してみました。
+Jenkinsの環境  Amazon Linux2  AMI ID : ami-0f27d081df46f326c AMI名 : amzn2-ami-hvm-2.0.20210303.0-x86_64-gp2   Jenkins  version : Jenkins 2.284    環境変数とプラグイン設定   複数のJobを登録する場合は、各Jobに同じパラメータを設定することになりますが、環境変数に登録しておくと一括管理ができます。
+  Jobパラメーターに実行日を渡すために、timestamperプラグインを利用しました。     Manage Jenkins &amp;gt; System Configuration &amp;gt; Configure System &amp;gt; Global properties &amp;gt; Environment variablesでJob共通で利用している環境変数を設定します。     Batch Job登録  New Item &amp;gt; Freestyle projectを選び、JOBを登録します。     java -jar ${JAR_NAME} ${DB_HOST} ${DB_PORT} ${DB_NAME} ${DB_USER} ${DB_PASSWORD} \ --spring.</description>
+    </item>
+    
     <item>
       <title>Jenkins環境でSpring BatchプロジェクトをGradleビルドする</title>
       <link>https://bokyung-kang.github.io/ja/2021/03/30/jenkins-gradle-build/</link>
       <pubDate>Tue, 30 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://bokyung-kang.github.io/ja/2021/03/30/jenkins-gradle-build/</guid>
-      <description>Spring BatchのJob Runnerを調査していましたが、その中でJenkinsでgradleビルドをしてみました。
-Jenkinsの環境  Amazon Linux2  AMI ID : ami-0f27d081df46f326c AMI名 : amzn2-ami-hvm-2.0.20210303.0-x86_64-gp2   Jenkins  version : Jenkins 2.284    認証情報登録 Github ID/PASSWORD認証方法   JenkinsでRepository関連作業ができるようにGithub上でPersonal access tokensを発行します。 ( Settings &amp;gt; Developer settings &amp;gt; Personal access tokens )   Manage Jenkins &amp;gt; Manage Credentials &amp;gt; domainにあるglobalをクリックします。   KindはUsername with passwordを選び、パスワード欄にはPersonal access tokens値を入力し認証情報を追加します。   Github SSH 認証方法   SSH鍵を作成します。   Githubプロジェクト設定のDeploy keysに公開鍵を追加します。   KindはSSH Username with private keyを選び、Private Key &amp;gt; Enter directlyに秘密鍵を追加します。   Gradle, JDK設定  プロジェクトで利用するGradleとJDKを Manage Jenkins &amp;gt; System Configuration &amp;gt; Global Tool Configurationにて設定します。一つのバージョンのみ設定した場合は、各JOBでデフォルトとして設定されます。複数のバージョンが登録されている場合は、JOB設定時バージョンを選べられます。   Job登録   New Item &amp;gt; Freestyle projectを選び、JOBを登録します。github access tokens認証の場合は、Repository URLに git@github.</description>
+      <description>Spring BatchのJob Runnerを調査していましたが、その中でJenkinsでbatchプロジェクトをgradleビルドをしてみました。
+Jenkinsの環境  Amazon Linux2  AMI ID : ami-0f27d081df46f326c AMI名 : amzn2-ami-hvm-2.0.20210303.0-x86_64-gp2   Jenkins  version : Jenkins 2.284    認証情報登録 Github ID/PASSWORD認証方法   JenkinsでRepository関連作業ができるようにGithub上でPersonal access tokensを発行します。 ( Settings &amp;gt; Developer settings &amp;gt; Personal access tokens )     Manage Jenkins &amp;gt; Manage Credentials &amp;gt; domainにあるglobalをクリックします。     KindはUsername with passwordを選び、パスワード欄にはPersonal access tokens値を入力し認証情報を追加します。     Github SSH 認証方法   SSH鍵を作成します。       Githubプロジェクト設定のDeploy keysに公開鍵を追加します。     KindはSSH Username with private keyを選び、Private Key &amp;gt; Enter directlyに秘密鍵を追加します。     Gradle, JDK設定  プロジェクトで利用するGradleとJDKを Manage Jenkins &amp;gt; System Configuration &amp;gt; Global Tool Configurationにて設定します。一つのバージョンのみ設定した場合は、各JOBでデフォルトとして設定されます。複数のバージョンが登録されている場合は、JOB設定時バージョンを選べられます。     Job登録   New Item &amp;gt; Freestyle projectを選び、JOBを登録します。github access tokens認証の場合は、Repository URLに git@github.</description>
     </item>
     
     <item>
@@ -23,7 +34,7 @@ Jenkinsの環境  Amazon Linux2  AMI ID : ami-0f27d081df46f326c AMI名 : amzn2-a
       
       <guid>https://bokyung-kang.github.io/ja/2021/03/17/jenkins-install/</guid>
       <description>ローカル環境でJenkinsを試しましたが、エラーになるケールがあったため、検証のために、Amazon Linux2にJenkinsをインストールしてみました。
-構築するJenkinsの環境  Amazon Linux2  AMI ID : ami-0f27d081df46f326c AMI名 : amzn2-ami-hvm-2.0.20210303.0-x86_64-gp2   Jenkins  version : Jenkins 2.284    EC2インスタンス作成及びJenkinsインストール EC2インスタンス作成ととセキュリティグループ設定   一番上に表示されているAMIを利用して作成しました。   Jenkinsアクセス用の8080ポートと、SSH接続用の22ポートを設定します。   Jenkinsインストール  Jenkins公式サイトのインストール方法 の順番通りに実行。  sudo wget -O /etc/yum.repos.d/jenkins.repo \ https://pkg.jenkins.io/redhat-stable/jenkins.repo sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key sudo yum upgrade sudo yum install jenkins java-1.8.0-openjdk-devel.x86_64 sudo systemctl daemon-reload Jenkins 実行 sudo systemctl start jenkins サービス実行状態を確認し、active状態になっていることを確認します。 Jenkins 初期設定   Jenkinsへアクセスします。http://xxxxxxxxxx:8080/</description>
+構築するJenkinsの環境  Amazon Linux2  AMI ID : ami-0f27d081df46f326c AMI名 : amzn2-ami-hvm-2.0.20210303.0-x86_64-gp2   Jenkins  version : Jenkins 2.284    EC2インスタンス作成及びJenkinsインストール EC2インスタンス作成ととセキュリティグループ設定   一番上に表示されているAMIを利用して作成しました。     Jenkinsアクセス用の8080ポートと、SSH接続用の22ポートを設定します。     Jenkinsインストール  Jenkins公式サイトのインストール方法 の順番通りに実行。  sudo wget -O /etc/yum.repos.d/jenkins.repo \ https://pkg.jenkins.io/redhat-stable/jenkins.repo sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key sudo yum upgrade sudo yum install jenkins java-1.8.0-openjdk-devel.x86_64 sudo systemctl daemon-reload Jenkins 実行 sudo systemctl start jenkins サービス実行状態を確認し、active状態になっていることを確認します。   Jenkins 初期設定   Jenkinsへアクセスします。http://xxxxxxxxxx:8080/</description>
     </item>
     
   </channel>

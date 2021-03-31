@@ -5,15 +5,26 @@
     <link>https://bokyung-kang.github.io/</link>
     <description>Recent content on Bokyung&#39;s Note</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 30 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung-kang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung-kang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jenkins에서 Spring Batch Job을 실행하기</title>
+      <link>https://bokyung-kang.github.io/2021/03/31/jenkins-batch-job/</link>
+      <pubDate>Wed, 31 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bokyung-kang.github.io/2021/03/31/jenkins-batch-job/</guid>
+      <description>Jenkins에서 스프링 배치 Job을 실행해 보았습니다.
+Jenkins 환경  Amazon Linux2  AMI ID : ami-0f27d081df46f326c AMI 이름 : amzn2-ami-hvm-2.0.20210303.0-x86_64-gp2   Jenkins  version : Jenkins 2.284    환경변수와 플러그인 설정   여러 Job을 등록하는 경우 각각의 Job에서 같은 파라미터를 넘겨주게 되는데 환경변수에 등록해두면 관리하기가 편해집니다.
+  Job파라미터로 실행날짜를 넘겨주기 위해서 timestamper플러그인을 사용하였습니다.     Manage Jenkins &amp;gt; System Configuration &amp;gt; Configure System &amp;gt; Global properties &amp;gt; Environment variables에서 Job에서 공통으로 사용하는 환경변수를 설정합니다.</description>
+    </item>
+    
     <item>
       <title>Jenkins에서 Spring Batch 프로젝트를 Gradle 빌드하기</title>
       <link>https://bokyung-kang.github.io/2021/03/30/jenkins-gradle-build/</link>
       <pubDate>Tue, 30 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://bokyung-kang.github.io/2021/03/30/jenkins-gradle-build/</guid>
-      <description>스프링 배치 Job Runner를 조사하던 중에 Jenkins에서 gradle빌드해 보았습니다.
-Jenkins 환경  Amazon Linux2  AMI ID : ami-0f27d081df46f326c AMI 이름 : amzn2-ami-hvm-2.0.20210303.0-x86_64-gp2   Jenkins  version : Jenkins 2.284    인증정보 등록 Github 아이디/패스워드 인증 방법   Jenkins에서 Repository관련 작업이 가능하도록 Github에서 Personal access tokens를 발행합니다. ( Settings &amp;gt; Developer settings &amp;gt; Personal access tokens )   Manage Jenkins &amp;gt; Manage Credentials &amp;gt; domain에 있는 global을 클릭합니다.</description>
+      <description>스프링 배치 Job Runner를 조사하던 중에 Jenkins에서 batch프로젝트를 gradle빌드해 보았습니다.
+Jenkins 환경  Amazon Linux2  AMI ID : ami-0f27d081df46f326c AMI 이름 : amzn2-ami-hvm-2.0.20210303.0-x86_64-gp2   Jenkins  version : Jenkins 2.284    인증정보 등록 Github 아이디/패스워드 인증 방법   Jenkins에서 Repository관련 작업이 가능하도록 Github에서 Personal access tokens를 발행합니다. ( Settings &amp;gt; Developer settings &amp;gt; Personal access tokens )     Manage Jenkins &amp;gt; Manage Credentials &amp;gt; domain에 있는 global을 클릭합니다.</description>
     </item>
     
     <item>
@@ -23,7 +34,7 @@ Jenkins 환경  Amazon Linux2  AMI ID : ami-0f27d081df46f326c AMI 이름 : amzn2
       
       <guid>https://bokyung-kang.github.io/2021/03/17/jenkins-install/</guid>
       <description>로컬 도커환경에서 Jenkins를 테스트 하던 중에 에러가 나는 경우가 있어서 검증을 위해서 Amazon Linux2에 Jenkins를 설치 해 보았습니다.
-설치한 Jenkins 환경  Amazon Linux2  AMI ID : ami-0f27d081df46f326c AMI 이름 : amzn2-ami-hvm-2.0.20210303.0-x86_64-gp2   Jenkins  version : Jenkins 2.284    EC2 인스턴스 생성 및 Jenkins설치 EC2 인스턴스 생성 및 보안그룹 설정   맨위에 표시되는 AMI로 생성했습니다.   젠킨스 접속용 8080포트와 SSH접속용 22번 포트를 설정합니다.   Jenkins 설치  Jenkins 공홈 설치 방법 에 나와있는 순서대로 설치하였습니다.</description>
+설치한 Jenkins 환경  Amazon Linux2  AMI ID : ami-0f27d081df46f326c AMI 이름 : amzn2-ami-hvm-2.0.20210303.0-x86_64-gp2   Jenkins  version : Jenkins 2.284    EC2 인스턴스 생성 및 Jenkins설치 EC2 인스턴스 생성 및 보안그룹 설정   맨위에 표시되는 AMI로 생성했습니다.     젠킨스 접속용 8080포트와 SSH접속용 22번 포트를 설정합니다.</description>
     </item>
     
     <item>
@@ -33,7 +44,7 @@ Jenkins 환경  Amazon Linux2  AMI ID : ami-0f27d081df46f326c AMI 이름 : amzn2
       
       <guid>https://bokyung-kang.github.io/2021/02/02/clrcleci-ecs-deploy/</guid>
       <description>springboot + kotlin으로 개발한 backendAPI를 CircleCI로 배포하고 있습니다. staging/production 환경별 환경변수를 Contexts를 이용하면 좀 더 편리하게 설정할 수 있습니다.
-Contexts 설정 Organization Settings &amp;gt; Contexts 에서 서비스의 각 환경별 환경변수를 설정합니다. staging/production 환경 이름으로 등록했습니다. staging 환경의 환경변수입니다. ecr와 ecs용 orbs를 이용하기 위해서 AWS 환경변수를 추가하고 프로젝트에서 공통으로 사용하기 위해서 SERVICE_PREFIX를 추가했습니다. CircleCI config.yml 설정 build-and-push-image  backend-build를 실행합니다. release 브랜치인 경우 build-and-push-image-staging을 실행합니다. master 브랜치인 경우 build-and-push-image-production을 실행합니다. context에는 CircleCI Contexts에서 지정한 이름을 추가합니다.</description>
+Contexts 설정 Organization Settings &amp;gt; Contexts 에서 서비스의 각 환경별 환경변수를 설정합니다. staging/production 환경 이름으로 등록했습니다.   staging 환경의 환경변수입니다. ecr와 ecs용 orbs를 이용하기 위해서 AWS 환경변수를 추가하고 프로젝트에서 공통으로 사용하기 위해서 SERVICE_PREFIX를 추가했습니다.   CircleCI config.yml 설정 build-and-push-image  backend-build를 실행합니다. release 브랜치인 경우 build-and-push-image-staging을 실행합니다. master 브랜치인 경우 build-and-push-image-production을 실행합니다.</description>
     </item>
     
     <item>
