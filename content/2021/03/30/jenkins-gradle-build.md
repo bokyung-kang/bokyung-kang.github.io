@@ -5,7 +5,7 @@ tags: ["AWS", "Jenkins", "Spring", "gradle"]
 author: "bokyung"
 ---
 
-스프링 배치 Job Runner를 조사하던 중에 Jenkins에서 gradle빌드해 보았습니다.
+스프링 배치 Job Runner를 조사하던 중에 Jenkins에서 batch프로젝트를 gradle빌드해 보았습니다.
 
 ## Jenkins 환경
 * Amazon Linux2
@@ -17,35 +17,35 @@ author: "bokyung"
 ## 인증정보 등록
 ### Github 아이디/패스워드 인증 방법
 * Jenkins에서 Repository관련 작업이 가능하도록 Github에서 `Personal access tokens`를 발행합니다. ( Settings > Developer settings > Personal access tokens )
-![global-credential](/images/2021/0330/gihhub-personal-access-tokens.png)
+{{< img src="/images/2021/0330/gihhub-personal-access-tokens.png" alt="gihhub-personal-access-tokens" link="/images/2021/0330/gihhub-personal-access-tokens.png">}}
 
 * Manage Jenkins > Manage Credentials > domain에 있는 global을 클릭합니다.
-![global-credential](/images/2021/0330/global-credential.png)
+{{< img src="/images/2021/0330/global-credential.png" alt="global-credential" link="/images/2021/0330/global-credential.png">}}
 
 * Kind는 `Username with password`를 선택하고 패스워드란에 `Personal access tokens`값을 입력하고 인증정보를 추가합니다.
-![global-credential](/images/2021/0330/github-credential.png)
+{{< img src="/images/2021/0330/github-credential.png" alt="github-credential" link="/images/2021/0330/github-credential.png">}}
 
 ### Github SSH 인증 방법
 * SSH키를 생성합니다.
-![generate-ssh-key](/images/2021/0330/generate-ssh-key.png)
-![jenkins-ssh-key](/images/2021/0330/jenkins-ssh-key.png)
+{{< img src="/images/2021/0330/generate-ssh-key.png" alt="generate-ssh-key" link="/images/2021/0330/generate-ssh-key.png">}}
+{{< img src="/images/2021/0330/jenkins-ssh-key.png" alt="jenkins-ssh-key" link="/images/2021/0330/jenkins-ssh-key.png">}}
 
 * Github 프로젝트 설정에서 `Deploy keys`에 공개키를 추가합니다.
-![deploy-keys](/images/2021/0330/deploy-keys.png)
+{{< img src="/images/2021/0330/deploy-keys.png" alt="deploy-keys" link="/images/2021/0330/deploy-keys.png">}}
 
 * Kind는 `SSH Username with private key`를 선택하고 `Private Key > Enter directly` 에 비밀키를 추가합니다.
-![deploy-keys](/images/2021/0330/ssh-credential.png)
+{{< img src="/images/2021/0330/ssh-credential.png" alt="ssh-credential" link="/images/2021/0330/ssh-credential.png">}}
 
 ### Gradle, JDK설정
 * 프로젝트에서 사용할 Gradle과 JDK를 `Manage Jenkins > System Configuration > Global Tool Configuration`에서 설정합니다. 한가지 버전만 설정한 경우 각 JOB에서 디폴트로 설정됩니다. 복수개 버전이 등록된 경우에는 JOB설정시 버전선택이 가능합니다.
-![deploy-keys](/images/2021/0330/jenkins-global-tool-configuration.png)
+{{< img src="/images/2021/0330/jenkins-global-tool-configuration.png" alt="jenkins-global-tool-configuration" link="/images/2021/0330/jenkins-global-tool-configuration.png">}}
 
 ### Job등록
 * `New Item > Freestyle project`을 선택해서 Job을 등록합니다. github access tokens으로 인증할 경우에는 Repository URL에 `git@github.com:bokyung-kang/batch-test`을 입력하고 Credentials에서 github인증을 등록한 Username을 선택합니다.
-![global-credential](/images/2021/0330/build-job-github.png)
+{{< img src="/images/2021/0330/build-job-github.png" alt="build-job-github" link="/images/2021/0330/build-job-github.png">}}
 
 * ssh인증할 경우에는 Repository URL에 `git@github.com:bokyung-kang/batch-test`을 입력하고 Credentials에서 ssh을 등록한 Username을 선택합니다.
-![global-credential](/images/2021/0330/build-job-ssh.png)
+{{< img src="/images/2021/0330/build-job-ssh.png" alt="build-job-ssh" link="/images/2021/0330/build-job-ssh.png">}}
 
 * build script
   ```
@@ -61,8 +61,27 @@ author: "bokyung"
 
 ### Gradle Build
 * 빌드를 실행합니다.
-![global-credential](/images/2021/0330/gradle-build.png)
+```
+[batch-test] $ /bin/sh -xe /tmp/jenkins568576160326820555.sh
++ chmod +x gradlew
++ ./gradlew assemble
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :compileKotlin
+> Task :compileJava NO-SOURCE
+> Task :processResources
+> Task :classes
+> Task :bootJarMainClassName
+> Task :bootJar
+> Task :inspectClassesForKotlinIC
+> Task :jar SKIPPED
+> Task :assemble
 
+BUILD SUCCESSFUL in 33s
+5 actionable tasks: 5 executed
++ mkdir -p /var/lib/jenkins/workspace/deploy-test
++ cp /var/lib/jenkins/workspace/batch-test/build/libs/batch-0.0.1-SNAPSHOT.jar /var/lib/jenkins/workspace/deploy-test/.
+Finished: SUCCESS
+```
 * `$JENKINS_HOME/workspace/deploy-test/`에 jar파일이 복사되었네요.
-![global-credential](/images/2021/0330/build-jar.png)
+{{< img src="/images/2021/0330/build-jar.png" alt="build-jar" link="/images/2021/0330/build-jar.png">}}
 

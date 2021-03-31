@@ -11,11 +11,11 @@ staging/production環境毎の環境変数はContextsを利用すればもっと
 ## Contexts設定
 Organization Settings > Contexts でサービスの各環境毎の環境変数を設定します。
 staging/productionの環境名で追加しました。
-![contexts](/images/2021/0202/contexts.png)
+{{< img src="/images/2021/0202/contexts.png" alt="contexts" link="/images/2021/0202/contexts.png">}}
 
 staging環境の環境変数です。
 ecrとecsのorbsを利用するため、AWSの環境変数を追加し、プロジェクト内で共通で利用するためにSERVICE_PREFIXを追加しました。
-![contexts_staging](/images/2021/0202/contexts_staging.png)
+{{< img src="/images/2021/0202/contexts_staging.png" alt="contexts_staging" link="/images/2021/0202/contexts_staging.png">}}
 
 ## CircleCI config.yml 設定               
 ### build-and-push-image
@@ -112,11 +112,12 @@ workflows:
 
 ## CircleCI デプロイ
 ### release/20210202_1 ブランチを push
-![circleci_build](/images/2021/0202/circleci_build.png)
+{{< img src="/images/2021/0202/circleci_build.png" alt="circleci_build" link="/images/2021/0202/circleci_build.png">}}
 
 ### 新たなタスク定義が登録されていることを確認 `task-definition/*****-backend:5`
-![circleci_service_update](/images/2021/0202/circleci_service_update.png)
+{{< img src="/images/2021/0202/circleci_service_update.png" alt="circleci_service_update" link="/images/2021/0202/circleci_service_update.png">}}
 
 ### AWS ECS 確認
 * タスク定義 `demo1-backend:5`でタスクが起動されていることが確認できます。
-![aws_ecs](/images/2021/0202/aws_ecs.png)
+{{< img src="/images/2021/0202/aws_ecs.png" alt="aws_ecs" link="/images/2021/0202/aws_ecs.png">}}
+

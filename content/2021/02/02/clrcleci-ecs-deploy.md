@@ -11,11 +11,11 @@ staging/production 환경별 환경변수를 Contexts를 이용하면 좀 더 �
 ## Contexts 설정
 Organization Settings > Contexts 에서 서비스의 각 환경별 환경변수를 설정합니다.
 staging/production 환경 이름으로 등록했습니다.
-![contexts](/images/2021/0202/contexts.png)
+{{< img src="/images/2021/0202/contexts.png" alt="contexts" link="/images/2021/0202/contexts.png">}}
 
 staging 환경의 환경변수입니다.
 ecr와 ecs용 orbs를 이용하기 위해서 AWS 환경변수를 추가하고 프로젝트에서 공통으로 사용하기 위해서 SERVICE_PREFIX를 추가했습니다.
-![contexts_staging](/images/2021/0202/contexts_staging.png)
+{{< img src="/images/2021/0202/contexts_staging.png" alt="contexts_staging" link="/images/2021/0202/contexts_staging.png">}}
 
 ## CircleCI config.yml 설정               
 ### build-and-push-image
@@ -112,11 +112,11 @@ workflows:
 
 ## CircleCI 배포
 ### release/20210202_1 브랜치를 push
-![circleci_build](/images/2021/0202/circleci_build.png)
+{{< img src="/images/2021/0202/circleci_build.png" alt="circleci_build" link="/images/2021/0202/circleci_build.png">}}
 
 ### 새 작업정의가 등록된것을 확인 `task-definition/*****-backend:5`
-![circleci_service_update](/images/2021/0202/circleci_service_update.png)
+{{< img src="/images/2021/0202/circleci_service_update.png" alt="circleci_service_update" link="/images/2021/0202/circleci_service_update.png">}}
 
 ### AWS ECS 확인
 * 작업정의 `demo1-backend:5`로 작업이 기동된 것을 확인할 수 있습니다.
-![aws_ecs](/images/2021/0202/aws_ecs.png)
+{{< img src="/images/2021/0202/aws_ecs.png" alt="aws_ecs" link="/images/2021/0202/aws_ecs.png">}}
