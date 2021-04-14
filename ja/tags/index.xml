@@ -2,61 +2,61 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Bokyung&#39;s Note</title>
-    <link>https://bokyung-kang.github.io/ja/tags/</link>
+    <link>https://bokyung.dev/ja/tags/</link>
     <description>Recent content in Tags on Bokyung&#39;s Note</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 31 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung-kang.github.io/ja/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung.dev/ja/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AWS</title>
-      <link>https://bokyung-kang.github.io/ja/tags/aws/</link>
+      <link>https://bokyung.dev/ja/tags/aws/</link>
       <pubDate>Wed, 31 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bokyung-kang.github.io/ja/tags/aws/</guid>
+      <guid>https://bokyung.dev/ja/tags/aws/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jenkins</title>
-      <link>https://bokyung-kang.github.io/ja/tags/jenkins/</link>
+      <link>https://bokyung.dev/ja/tags/jenkins/</link>
       <pubDate>Wed, 31 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bokyung-kang.github.io/ja/tags/jenkins/</guid>
+      <guid>https://bokyung.dev/ja/tags/jenkins/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spring</title>
-      <link>https://bokyung-kang.github.io/ja/tags/spring/</link>
+      <link>https://bokyung.dev/ja/tags/spring/</link>
       <pubDate>Wed, 31 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bokyung-kang.github.io/ja/tags/spring/</guid>
+      <guid>https://bokyung.dev/ja/tags/spring/</guid>
       <description></description>
     </item>
     
     <item>
       <title>gradle</title>
-      <link>https://bokyung-kang.github.io/ja/tags/gradle/</link>
+      <link>https://bokyung.dev/ja/tags/gradle/</link>
       <pubDate>Tue, 30 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bokyung-kang.github.io/ja/tags/gradle/</guid>
+      <guid>https://bokyung.dev/ja/tags/gradle/</guid>
       <description></description>
     </item>
     
     <item>
       <title>circleci</title>
-      <link>https://bokyung-kang.github.io/ja/tags/circleci/</link>
+      <link>https://bokyung.dev/ja/tags/circleci/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bokyung-kang.github.io/ja/tags/circleci/</guid>
+      <guid>https://bokyung.dev/ja/tags/circleci/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ECS</title>
-      <link>https://bokyung-kang.github.io/ja/tags/ecs/</link>
+      <link>https://bokyung.dev/ja/tags/ecs/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bokyung-kang.github.io/ja/tags/ecs/</guid>
+      <guid>https://bokyung.dev/ja/tags/ecs/</guid>
       <description></description>
     </item>
     

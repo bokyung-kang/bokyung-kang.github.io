@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Spring on Bokyung&#39;s Note</title>
-    <link>https://bokyung-kang.github.io/tags/spring/</link>
+    <link>https://bokyung.dev/tags/spring/</link>
     <description>Recent content in Spring on Bokyung&#39;s Note</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 31 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung-kang.github.io/tags/spring/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung.dev/tags/spring/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jenkins에서 Spring Batch Job을 실행하기</title>
-      <link>https://bokyung-kang.github.io/2021/03/31/jenkins-batch-job/</link>
+      <link>https://bokyung.dev/2021/03/31/jenkins-batch-job/</link>
       <pubDate>Wed, 31 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bokyung-kang.github.io/2021/03/31/jenkins-batch-job/</guid>
+      <guid>https://bokyung.dev/2021/03/31/jenkins-batch-job/</guid>
       <description>Jenkins에서 스프링 배치 Job을 실행해 보았습니다.
 Jenkins 환경  Amazon Linux2  AMI ID : ami-0f27d081df46f326c AMI 이름 : amzn2-ami-hvm-2.0.20210303.0-x86_64-gp2   Jenkins  version : Jenkins 2.284    환경변수와 플러그인 설정   여러 Job을 등록하는 경우 각각의 Job에서 같은 파라미터를 넘겨주게 되는데 환경변수에 등록해두면 관리하기가 편해집니다.
   Job파라미터로 실행날짜를 넘겨주기 위해서 timestamper플러그인을 사용하였습니다.     Manage Jenkins &amp;gt; System Configuration &amp;gt; Configure System &amp;gt; Global properties &amp;gt; Environment variables에서 Job에서 공통으로 사용하는 환경변수를 설정합니다.</description>
@@ -19,10 +19,10 @@ Jenkins 환경  Amazon Linux2  AMI ID : ami-0f27d081df46f326c AMI 이름 : amzn2
     
     <item>
       <title>Jenkins에서 Spring Batch 프로젝트를 Gradle 빌드하기</title>
-      <link>https://bokyung-kang.github.io/2021/03/30/jenkins-gradle-build/</link>
+      <link>https://bokyung.dev/2021/03/30/jenkins-gradle-build/</link>
       <pubDate>Tue, 30 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bokyung-kang.github.io/2021/03/30/jenkins-gradle-build/</guid>
+      <guid>https://bokyung.dev/2021/03/30/jenkins-gradle-build/</guid>
       <description>스프링 배치 Job Runner를 조사하던 중에 Jenkins에서 batch프로젝트를 gradle빌드해 보았습니다.
 Jenkins 환경  Amazon Linux2  AMI ID : ami-0f27d081df46f326c AMI 이름 : amzn2-ami-hvm-2.0.20210303.0-x86_64-gp2   Jenkins  version : Jenkins 2.284    인증정보 등록 Github 아이디/패스워드 인증 방법   Jenkins에서 Repository관련 작업이 가능하도록 Github에서 Personal access tokens를 발행합니다. ( Settings &amp;gt; Developer settings &amp;gt; Personal access tokens )     Manage Jenkins &amp;gt; Manage Credentials &amp;gt; domain에 있는 global을 클릭합니다.</description>
     </item>

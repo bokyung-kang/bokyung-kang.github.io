@@ -2,209 +2,209 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://bokyung-kang.github.io/ja/2021/</loc>
+    <loc>https://bokyung.dev/ja/2021/</loc>
     <lastmod>2021-03-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://bokyung-kang.github.io/2021/"
+                href="https://bokyung.dev/2021/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://bokyung-kang.github.io/ja/2021/"
+                href="https://bokyung.dev/ja/2021/"
                 />
   </url><url>
-    <loc>https://bokyung-kang.github.io/ja/tags/aws/</loc>
+    <loc>https://bokyung.dev/ja/tags/aws/</loc>
     <lastmod>2021-03-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://bokyung-kang.github.io/tags/aws/"
+                href="https://bokyung.dev/tags/aws/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://bokyung-kang.github.io/ja/tags/aws/"
+                href="https://bokyung.dev/ja/tags/aws/"
                 />
   </url><url>
-    <loc>https://bokyung-kang.github.io/ja/</loc>
+    <loc>https://bokyung.dev/ja/</loc>
     <lastmod>2021-03-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://bokyung-kang.github.io/"
+                href="https://bokyung.dev/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://bokyung-kang.github.io/ja/"
+                href="https://bokyung.dev/ja/"
                 />
   </url><url>
-    <loc>https://bokyung-kang.github.io/ja/tags/jenkins/</loc>
+    <loc>https://bokyung.dev/ja/tags/jenkins/</loc>
     <lastmod>2021-03-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://bokyung-kang.github.io/tags/jenkins/"
+                href="https://bokyung.dev/tags/jenkins/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://bokyung-kang.github.io/ja/tags/jenkins/"
+                href="https://bokyung.dev/ja/tags/jenkins/"
                 />
   </url><url>
-    <loc>https://bokyung-kang.github.io/ja/2021/03/31/jenkins-batch-job/</loc>
+    <loc>https://bokyung.dev/ja/2021/03/31/jenkins-batch-job/</loc>
     <lastmod>2021-03-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://bokyung-kang.github.io/2021/03/31/jenkins-batch-job/"
+                href="https://bokyung.dev/2021/03/31/jenkins-batch-job/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://bokyung-kang.github.io/ja/2021/03/31/jenkins-batch-job/"
+                href="https://bokyung.dev/ja/2021/03/31/jenkins-batch-job/"
                 />
   </url><url>
-    <loc>https://bokyung-kang.github.io/ja/tags/spring/</loc>
+    <loc>https://bokyung.dev/ja/tags/spring/</loc>
     <lastmod>2021-03-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://bokyung-kang.github.io/tags/spring/"
+                href="https://bokyung.dev/tags/spring/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://bokyung-kang.github.io/ja/tags/spring/"
+                href="https://bokyung.dev/ja/tags/spring/"
                 />
   </url><url>
-    <loc>https://bokyung-kang.github.io/ja/tags/</loc>
+    <loc>https://bokyung.dev/ja/tags/</loc>
     <lastmod>2021-03-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://bokyung-kang.github.io/tags/"
+                href="https://bokyung.dev/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://bokyung-kang.github.io/ja/tags/"
+                href="https://bokyung.dev/ja/tags/"
                 />
   </url><url>
-    <loc>https://bokyung-kang.github.io/ja/tags/gradle/</loc>
+    <loc>https://bokyung.dev/ja/tags/gradle/</loc>
     <lastmod>2021-03-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://bokyung-kang.github.io/tags/gradle/"
+                href="https://bokyung.dev/tags/gradle/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://bokyung-kang.github.io/ja/tags/gradle/"
+                href="https://bokyung.dev/ja/tags/gradle/"
                 />
   </url><url>
-    <loc>https://bokyung-kang.github.io/ja/2021/03/30/jenkins-gradle-build/</loc>
+    <loc>https://bokyung.dev/ja/2021/03/30/jenkins-gradle-build/</loc>
     <lastmod>2021-03-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://bokyung-kang.github.io/2021/03/30/jenkins-gradle-build/"
+                href="https://bokyung.dev/2021/03/30/jenkins-gradle-build/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://bokyung-kang.github.io/ja/2021/03/30/jenkins-gradle-build/"
+                href="https://bokyung.dev/ja/2021/03/30/jenkins-gradle-build/"
                 />
   </url><url>
-    <loc>https://bokyung-kang.github.io/ja/2021/03/17/jenkins-install/</loc>
+    <loc>https://bokyung.dev/ja/2021/03/17/jenkins-install/</loc>
     <lastmod>2021-03-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://bokyung-kang.github.io/2021/03/17/jenkins-install/"
+                href="https://bokyung.dev/2021/03/17/jenkins-install/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://bokyung-kang.github.io/ja/2021/03/17/jenkins-install/"
+                href="https://bokyung.dev/ja/2021/03/17/jenkins-install/"
                 />
   </url><url>
-    <loc>https://bokyung-kang.github.io/ja/tags/circleci/</loc>
+    <loc>https://bokyung.dev/ja/tags/circleci/</loc>
     <lastmod>2021-02-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://bokyung-kang.github.io/tags/circleci/"
+                href="https://bokyung.dev/tags/circleci/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://bokyung-kang.github.io/ja/tags/circleci/"
+                href="https://bokyung.dev/ja/tags/circleci/"
                 />
   </url><url>
-    <loc>https://bokyung-kang.github.io/ja/2021/02/02/clrcleci-ecs-deploy/</loc>
+    <loc>https://bokyung.dev/ja/2021/02/02/clrcleci-ecs-deploy/</loc>
     <lastmod>2021-02-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://bokyung-kang.github.io/2021/02/02/clrcleci-ecs-deploy/"
+                href="https://bokyung.dev/2021/02/02/clrcleci-ecs-deploy/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://bokyung-kang.github.io/ja/2021/02/02/clrcleci-ecs-deploy/"
+                href="https://bokyung.dev/ja/2021/02/02/clrcleci-ecs-deploy/"
                 />
   </url><url>
-    <loc>https://bokyung-kang.github.io/ja/tags/ecs/</loc>
+    <loc>https://bokyung.dev/ja/tags/ecs/</loc>
     <lastmod>2021-02-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://bokyung-kang.github.io/tags/ecs/"
+                href="https://bokyung.dev/tags/ecs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://bokyung-kang.github.io/ja/tags/ecs/"
+                href="https://bokyung.dev/ja/tags/ecs/"
                 />
   </url><url>
-    <loc>https://bokyung-kang.github.io/ja/archives/</loc>
+    <loc>https://bokyung.dev/ja/archives/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://bokyung-kang.github.io/archives/"
+                href="https://bokyung.dev/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://bokyung-kang.github.io/ja/archives/"
+                href="https://bokyung.dev/ja/archives/"
                 />
   </url><url>
-    <loc>https://bokyung-kang.github.io/ja/categories/</loc>
+    <loc>https://bokyung.dev/ja/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://bokyung-kang.github.io/categories/"
+                href="https://bokyung.dev/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://bokyung-kang.github.io/ja/categories/"
+                href="https://bokyung.dev/ja/categories/"
                 />
   </url><url>
-    <loc>https://bokyung-kang.github.io/ja/search/</loc>
+    <loc>https://bokyung.dev/ja/search/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://bokyung-kang.github.io/search/"
+                href="https://bokyung.dev/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://bokyung-kang.github.io/ja/search/"
+                href="https://bokyung.dev/ja/search/"
                 />
   </url>
 </urlset>
