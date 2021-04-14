@@ -1,4 +1,4 @@
-baseURL: "https://bokyung-kang.github.io/"
+baseURL: "https://bokyung.dev/"
 title: Bokyung's Note
 paginate: 5
 theme: PaperMod
@@ -9,7 +9,7 @@ buildFuture: false
 buildExpired: false
 defaultContentLanguage: ko
 enableEmoji: true
-googleAnalytics: G-2FXFGPJH14
+googleAnalytics: G-R7DJYPBNN5
 
 minify:
   disableXML: true
@@ -65,7 +65,7 @@ params:
   comments: true
   socialIcons:
     - name: github
-      url: 'https://github.com/bokyung-kang'
+      url: 'https://bokyung.dev'
   label:
     icon: /images/main_icon.jpg
     iconWidth: 30px
