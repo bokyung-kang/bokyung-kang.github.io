@@ -3,7 +3,7 @@ title: Bokyung's Note
 paginate: 5
 theme: PaperMod
 enableInlineShortcodes: true
-enableRobotsTXT: true
+enableRobotsTXT: false
 buildDrafts: false
 buildFuture: false
 buildExpired: false

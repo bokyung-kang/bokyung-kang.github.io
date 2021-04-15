@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /search/
+Disallow: /tags/
+Disallow: /archives/
+Sitemap: https://bokyung.dev/sitemap.xml
