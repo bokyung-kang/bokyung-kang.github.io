@@ -5,7 +5,17 @@
     <link>https://bokyung.dev/ja/tags/spring/</link>
     <description>Recent content in Spring on Bokyung&#39;s Note</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 31 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung.dev/ja/tags/spring/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung.dev/ja/tags/spring/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flyway 一部手動で作業する</title>
+      <link>https://bokyung.dev/ja/2021/04/15/flyway-springboot/</link>
+      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bokyung.dev/ja/2021/04/15/flyway-springboot/</guid>
+      <description>Spring BootプロジェクトでFlywayを利用していますが、手動で作業しないといけないケースが出てきます。データが多いテーブルに手動でカラムを追加したり、indexを追加したりなどなど。 手動で作業した場合は誰がいつ作業したのかが管理できないため、履歴管理する方法がないかと思い、公式ドキュメントを読んでみました。 ignoreIgnoredMigrationsパラメーターを検証してみました。
+バージョン  Flyway  flyway-core 7.1.1   Spring Boot 2.4.1  テーブル追加しサーバー起動  sqlバージョンファイル追加  V1.0.0__Create_accounts.sql CREATE TABLE accounts ( user_id serial PRIMARY KEY, username VARCHAR ( 50 ) UNIQUE NOT NULL, password VARCHAR ( 50 ) NOT NULL, created_on TIMESTAMP NOT NULL );  V1.1.0__Modify_accounts.sql ALTER TABLE accounts ADD COLUMN last_login TIMESTAMP;    サーバー起動  サーバー起動時、DBへ正常的にSQL文が反映されました。 2021-04-15 11:06:14.196 INFO 7888 --- [ restartedMain] o.</description>
+    </item>
+    
     <item>
       <title>Jenkins環境でSpring Batch Jobを実行する</title>
       <link>https://bokyung.dev/ja/2021/03/31/jenkins-batch-job/</link>

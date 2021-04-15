@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Flyway on Bokyung&#39;s Note</title>
+    <link>https://bokyung.dev/tags/flyway/</link>
+    <description>Recent content in Flyway on Bokyung&#39;s Note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 15 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung.dev/tags/flyway/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flyway 일부 수동으로 작업하기</title>
+      <link>https://bokyung.dev/2021/04/15/flyway-springboot/</link>
+      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bokyung.dev/2021/04/15/flyway-springboot/</guid>
+      <description>스프링부트 프로젝트에서 Flyway를 사용하다 보면 수동으로 작업을 해야 하는 경우가 생깁니다. 데이터가 많은 테이블에 수동으로 컬럼이나 인덱스를 추가한다던가. 그런데 이렇게 되면 누가 수동으로 작업을 했는지 이력이 남지 않기때문에 이력관리도 할 수 있는 방법이 없을까하고 공식 Document를 찾아봤습니다. ignoreIgnoredMigrations파라미터를 테스트해 보았습니다.
+버전  Flyway  flyway-core 7.1.1   Spring Boot 2.4.1  테이블 추가, 서버 기동  sql버전 파일 추가  V1.0.0__Create_accounts.sql CREATE TABLE accounts ( user_id serial PRIMARY KEY, username VARCHAR ( 50 ) UNIQUE NOT NULL, password VARCHAR ( 50 ) NOT NULL, created_on TIMESTAMP NOT NULL );  V1.</description>
+    </item>
+    
+  </channel>
+</rss>
