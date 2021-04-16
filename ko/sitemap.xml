@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://bokyung.dev/2021/</loc>
-    <lastmod>2021-04-15T00:00:00+00:00</lastmod>
+    <lastmod>2021-04-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://bokyung.dev/</loc>
-    <lastmod>2021-04-15T00:00:00+00:00</lastmod>
+    <lastmod>2021-04-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -26,6 +26,58 @@
                 rel="alternate"
                 hreflang="ko"
                 href="https://bokyung.dev/"
+                />
+  </url><url>
+    <loc>https://bokyung.dev/tags/react.js/</loc>
+    <lastmod>2021-04-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bokyung.dev/ja/tags/react.js/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://bokyung.dev/tags/react.js/"
+                />
+  </url><url>
+    <loc>https://bokyung.dev/tags/sentry/</loc>
+    <lastmod>2021-04-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bokyung.dev/ja/tags/sentry/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://bokyung.dev/tags/sentry/"
+                />
+  </url><url>
+    <loc>https://bokyung.dev/2021/04/16/sentry-react/</loc>
+    <lastmod>2021-04-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bokyung.dev/ja/2021/04/16/sentry-react/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://bokyung.dev/2021/04/16/sentry-react/"
+                />
+  </url><url>
+    <loc>https://bokyung.dev/tags/</loc>
+    <lastmod>2021-04-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bokyung.dev/ja/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://bokyung.dev/tags/"
                 />
   </url><url>
     <loc>https://bokyung.dev/tags/flyway/</loc>
@@ -54,19 +106,6 @@
                 href="https://bokyung.dev/2021/04/15/flyway-springboot/"
                 />
   </url><url>
-    <loc>https://bokyung.dev/tags/sentry/</loc>
-    <lastmod>2021-04-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://bokyung.dev/ja/tags/sentry/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://bokyung.dev/tags/sentry/"
-                />
-  </url><url>
     <loc>https://bokyung.dev/2021/04/15/sentry-springboot/</loc>
     <lastmod>2021-04-15T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -91,19 +130,6 @@
                 rel="alternate"
                 hreflang="ko"
                 href="https://bokyung.dev/tags/spring/"
-                />
-  </url><url>
-    <loc>https://bokyung.dev/tags/</loc>
-    <lastmod>2021-04-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://bokyung.dev/ja/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://bokyung.dev/tags/"
                 />
   </url><url>
     <loc>https://bokyung.dev/tags/aws/</loc>

@@ -5,22 +5,31 @@
     <link>https://bokyung.dev/tags/</link>
     <description>Recent content in Tags on Bokyung&#39;s Note</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 15 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Flyway</title>
-      <link>https://bokyung.dev/tags/flyway/</link>
-      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      <title>React.js</title>
+      <link>https://bokyung.dev/tags/react.js/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bokyung.dev/tags/flyway/</guid>
+      <guid>https://bokyung.dev/tags/react.js/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sentry</title>
       <link>https://bokyung.dev/tags/sentry/</link>
-      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://bokyung.dev/tags/sentry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flyway</title>
+      <link>https://bokyung.dev/tags/flyway/</link>
+      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bokyung.dev/tags/flyway/</guid>
       <description></description>
     </item>
     
