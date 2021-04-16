@@ -26,8 +26,8 @@
 バージョン  Spring Boot 2.4.1 Sentry  sentry-spring-boot-starter 4.3.0    Sentryへプロジェクト追加及び設定   Sentryへログイン後、プロジェクト作成。
   Client Keys (DSN)メニューに書いてある、DSNキーをコピーしておきます。     build.gradle.ktsに依存関係を追加します。
  build.gradle.kts implementation(&amp;quot;io.sentry:sentry-spring-boot-starter:4.3.0&amp;quot;)     application.properties에 DSN (Data Source Name)を設定します。
- application.properties sentry.dsn=https://xxxxxxxxxxxxxxxxxxxxxxxxxxx@xxxxxx.ingest.sentry.io/xxxxx  application-development.properties  # 各環境の設定も可能です。 sentry.environment=development     Sentryにエラーを送るための設定
- サンプルプロジェクトがRestApiプロジェクトなので、@RestControllerAdviceを利用して共通エラー処理を追加しました。 @RestControllerAdvice class SampleControllerAdvice { @ResponseStatus(HttpStatus.BAD_REQUEST) @ExceptionHandler(MissingPathVariableException::class) fun handleMissingPathVariable(ex: MissingPathVariableException): Map&amp;lt;String, String&amp;gt; { Sentry.captureException(ex) val error: Map&amp;lt;String, String&amp;gt; = mapOf(&amp;quot;code&amp;quot; to &amp;quot;E0001&amp;quot;, &amp;quot;message&amp;quot; to &amp;quot;Parameter error&amp;quot;) return error } @ResponseStatus(HttpStatus.</description>
+ application.properties # DSN設定 sentry.dsn=https://xxxxxxxxxxxxxxxxxxxxxxxxxxx@xxxxxx.ingest.sentry.io/xxxxx # エラートレース設定 sentry.enable-tracing=true  application-development.properties # 各環境の設定も可能です。 sentry.environment=development     Sentryにエラーを送るための設定
+ サンプルプロジェクトがRestApiプロジェクトなので、@RestControllerAdviceを利用して共通エラー処理を追加しました。 @RestControllerAdvice class SampleControllerAdvice { @ResponseStatus(HttpStatus.BAD_REQUEST) @ExceptionHandler(MissingPathVariableException::class) fun handleMissingPathVariable(ex: MissingPathVariableException): Map&amp;lt;String, String&amp;gt; { Sentry.</description>
     </item>
     
     <item>
