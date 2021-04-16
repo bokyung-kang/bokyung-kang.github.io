@@ -1,39 +1,39 @@
 ---
-title: "Sentry를 스프링부트 프로젝트에 적용하기"
+title: "SentryをSpringBootプロジェクトへ適用する"
 date: "2021-04-15"
 tags: ["Sentry", "Spring"]
 author: "bokyung"
 ---
 
-react.js에 Sentry를 적용하려고 찾아보던 중에 스프링부트도 대응언어에 포함되어있어서 테스트해 보았습니다.
+react.jsへSentryを適用しようと思い、公式ドキュメントを見てみると対応言語の中にSpringBootがあったため、試してみました。
 
-## 버전
+## バージョン
 * Spring Boot 2.4.1
 * Sentry  
   * sentry-spring-boot-starter 4.3.0
 
-## Sentry에 프로젝트 추가 및 설정
-* Sentry에 로그인 후 프로젝트를 생성합니다.
-* Client Keys (DSN)메뉴에 있는 DSN키를 복사해둡니다.
+## Sentryへプロジェクト追加及び設定
+* Sentryへログイン後、プロジェクト作成。
+* Client Keys (DSN)メニューに書いてある、DSNキーをコピーしておきます。
   {{< img src="/images/2021/0415/spring-dsm.png" alt="spring-dsm" link="/images/2021/0415/spring-dsm.png">}}
-* build.gradle.kts에 의존관계를 추가합니다.
+* build.gradle.ktsに依存関係を追加します。
   * build.gradle.kts
     ```
     implementation("io.sentry:sentry-spring-boot-starter:4.3.0")
     ```
-* application.properties에 DSN (Data Source Name)을 설정합니다.
+* application.properties에 DSN (Data Source Name)を設定します。
   * application.properties
     ```
     sentry.dsn=https://xxxxxxxxxxxxxxxxxxxxxxxxxxx@xxxxxx.ingest.sentry.io/xxxxx
     ```
   * application-development.properties
     ```
-      # 각각의 환경도 설정할 수 있습니다. 
+      # 各環境の設定も可能です。
       sentry.environment=development
     ```
 
-* Sentry에 에러를 보내기 위한 설정
-  * RestApi프로젝트라 `@RestControllerAdvice`을 이용하여 공통 예외 처리를 추가했습니다.
+* Sentryにエラーを送るための設定
+  * サンプルプロジェクトがRestApiプロジェクトなので、`@RestControllerAdvice`を利用して共通エラー処理を追加しました。
     ```
     @RestControllerAdvice
     class SampleControllerAdvice {
@@ -64,16 +64,16 @@ react.js에 Sentry를 적용하려고 찾아보던 중에 스프링부트도 대
     }
     ```
 
-## 에러발생
-* Content type을 추가해서 에러를 발생시켜보겠습니다.
+## エラー発生
+* Content typeを追加し、エラーを発生させてみました。
 {{< img src="/images/2021/0415/springboot-error.png" alt="springboot-error" link="/images/2021/0415/springboot-error.png">}}
 
-* Dashboard도 제공하네요.　Custom Dashboards는 Business플랜부터 가능하네요.
+* Dashboardも提供しています。カスタムDashboardはBusinessプランから使えるそうです。
 {{< img src="/images/2021/0415/springboot-sentry.png" alt="springboot-sentry" link="/images/2021/0415/springboot-sentry.png">}}
 
-## slack에 통지
-* slack이나 타 서비스와 연계하려면 `Team`플랜부터 가능하네요.
+## slackへ通知
+* slackとか他のサービスと連携するためには、`Team`プランにする必要があります。
 {{< img src="/images/2021/0415/sentry-slack.png" alt="sentry-slack" link="/images/2021/0415/sentry-slack.png">}}
 
-Business플랜이면 Amazon SQS에 데이터 전송도 가능하다니 편리할 것 같습니다.
-나중에 [공식사이트](https://docs.sentry.io/platforms/java/guides/spring-boot/)를 꼼꼼히 살펴보아야겠습니다.
+Businessプランの場合、Amazon SQSへデータ転送もできると書いてあるので、便利そうです。
+後で [公式サイド](https://docs.sentry.io/platforms/java/guides/spring-boot/)をよく見てみます。
