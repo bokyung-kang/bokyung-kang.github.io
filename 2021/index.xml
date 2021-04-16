@@ -23,10 +23,10 @@
       
       <guid>https://bokyung.dev/2021/04/15/sentry-springboot/</guid>
       <description>react.js에 Sentry를 적용하려고 찾아보던 중에 스프링부트도 대응언어에 포함되어있어서 테스트해 보았습니다.
-버전  Flyway  flyway-core 7.1.1   Spring Boot 2.4.1 Sentry  sentry-spring-boot-starter 4.3.0    Sentry에 프로젝트 추가 및 설정   Sentry에 로그인 후 프로젝트를 생성합니다.
+버전  Spring Boot 2.4.1 Sentry  sentry-spring-boot-starter 4.3.0    Sentry에 프로젝트 추가 및 설정   Sentry에 로그인 후 프로젝트를 생성합니다.
   Client Keys (DSN)메뉴에 있는 DSN키를 복사해둡니다.     build.gradle.kts에 의존관계를 추가합니다.
  build.gradle.kts implementation(&amp;quot;io.sentry:sentry-spring-boot-starter:4.3.0&amp;quot;)     application.properties에 DSN (Data Source Name)을 설정합니다.
- application.properties sentry.</description>
+ application.properties sentry.dsn=https://xxxxxxxxxxxxxxxxxxxxxxxxxxx@xxxxxx.ingest.sentry.io/xxxxx  application-development.properties  # 각각의 환경도 설정할 수 있습니다.</description>
     </item>
     
     <item>

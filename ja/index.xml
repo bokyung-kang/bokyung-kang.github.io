@@ -17,6 +17,20 @@
     </item>
     
     <item>
+      <title>SentryをSpringBootプロジェクトへ適用する</title>
+      <link>https://bokyung.dev/ja/2021/04/15/sentry-springboot/</link>
+      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bokyung.dev/ja/2021/04/15/sentry-springboot/</guid>
+      <description>react.jsへSentryを適用しようと思い、公式ドキュメントを見てみると対応言語の中にSpringBootがあったため、試してみました。
+バージョン  Spring Boot 2.4.1 Sentry  sentry-spring-boot-starter 4.3.0    Sentryへプロジェクト追加及び設定   Sentryへログイン後、プロジェクト作成。
+  Client Keys (DSN)メニューに書いてある、DSNキーをコピーしておきます。     build.gradle.ktsに依存関係を追加します。
+ build.gradle.kts implementation(&amp;quot;io.sentry:sentry-spring-boot-starter:4.3.0&amp;quot;)     application.properties에 DSN (Data Source Name)を設定します。
+ application.properties sentry.dsn=https://xxxxxxxxxxxxxxxxxxxxxxxxxxx@xxxxxx.ingest.sentry.io/xxxxx  application-development.properties  # 各環境の設定も可能です。 sentry.environment=development     Sentryにエラーを送るための設定
+ サンプルプロジェクトがRestApiプロジェクトなので、@RestControllerAdviceを利用して共通エラー処理を追加しました。 @RestControllerAdvice class SampleControllerAdvice { @ResponseStatus(HttpStatus.BAD_REQUEST) @ExceptionHandler(MissingPathVariableException::class) fun handleMissingPathVariable(ex: MissingPathVariableException): Map&amp;lt;String, String&amp;gt; { Sentry.captureException(ex) val error: Map&amp;lt;String, String&amp;gt; = mapOf(&amp;quot;code&amp;quot; to &amp;quot;E0001&amp;quot;, &amp;quot;message&amp;quot; to &amp;quot;Parameter error&amp;quot;) return error } @ResponseStatus(HttpStatus.</description>
+    </item>
+    
+    <item>
       <title>Jenkins環境でSpring Batch Jobを実行する</title>
       <link>https://bokyung.dev/ja/2021/03/31/jenkins-batch-job/</link>
       <pubDate>Wed, 31 Mar 2021 00:00:00 +0000</pubDate>

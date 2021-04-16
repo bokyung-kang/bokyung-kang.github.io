@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sentry on Bokyung&#39;s Note</title>
+    <link>https://bokyung.dev/ja/tags/sentry/</link>
+    <description>Recent content in Sentry on Bokyung&#39;s Note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 15 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung.dev/ja/tags/sentry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SentryをSpringBootプロジェクトへ適用する</title>
+      <link>https://bokyung.dev/ja/2021/04/15/sentry-springboot/</link>
+      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bokyung.dev/ja/2021/04/15/sentry-springboot/</guid>
+      <description>react.jsへSentryを適用しようと思い、公式ドキュメントを見てみると対応言語の中にSpringBootがあったため、試してみました。
+バージョン  Spring Boot 2.4.1 Sentry  sentry-spring-boot-starter 4.3.0    Sentryへプロジェクト追加及び設定   Sentryへログイン後、プロジェクト作成。
+  Client Keys (DSN)メニューに書いてある、DSNキーをコピーしておきます。     build.gradle.ktsに依存関係を追加します。
+ build.gradle.kts implementation(&amp;quot;io.sentry:sentry-spring-boot-starter:4.3.0&amp;quot;)     application.properties에 DSN (Data Source Name)を設定します。
+ application.properties sentry.dsn=https://xxxxxxxxxxxxxxxxxxxxxxxxxxx@xxxxxx.ingest.sentry.io/xxxxx  application-development.properties  # 各環境の設定も可能です。 sentry.environment=development     Sentryにエラーを送るための設定
+ サンプルプロジェクトがRestApiプロジェクトなので、@RestControllerAdviceを利用して共通エラー処理を追加しました。 @RestControllerAdvice class SampleControllerAdvice { @ResponseStatus(HttpStatus.BAD_REQUEST) @ExceptionHandler(MissingPathVariableException::class) fun handleMissingPathVariable(ex: MissingPathVariableException): Map&amp;lt;String, String&amp;gt; { Sentry.captureException(ex) val error: Map&amp;lt;String, String&amp;gt; = mapOf(&amp;quot;code&amp;quot; to &amp;quot;E0001&amp;quot;, &amp;quot;message&amp;quot; to &amp;quot;Parameter error&amp;quot;) return error } @ResponseStatus(HttpStatus.</description>
+    </item>
+    
+  </channel>
+</rss>
