@@ -24,12 +24,15 @@ react.js에 Sentry를 적용하려고 찾아보던 중에 스프링부트도 대
 * application.properties에 DSN (Data Source Name)을 설정합니다.
   * application.properties
     ```
+    # DSN설정
     sentry.dsn=https://xxxxxxxxxxxxxxxxxxxxxxxxxxx@xxxxxx.ingest.sentry.io/xxxxx
+    # 에러 추척 설정
+    sentry.enable-tracing=true
     ```
   * application-development.properties
     ```
-      # 각각의 환경도 설정할 수 있습니다. 
-      sentry.environment=development
+    # 각각의 환경도 설정할 수 있습니다. 
+    sentry.environment=development
     ```
 
 * Sentry에 에러를 보내기 위한 설정
@@ -64,10 +67,11 @@ react.js에 Sentry를 적용하려고 찾아보던 중에 스프링부트도 대
     }
     ```
 
-## 에러발생
+## 에러를 발생시켜 Sentry상세페이지 확인
 * Content type을 추가해서 에러를 발생시켜보겠습니다.
 {{< img src="/images/2021/0415/springboot-error.png" alt="springboot-error" link="/images/2021/0415/springboot-error.png">}}
-
+* Search by Trace를 클릭하면 에러 추척도 가능하네요.
+{{< img src="/images/2021/0415/springboot-error-trace.png" alt="springboot-error-trace" link="/images/2021/0415/springboot-error-trace.png">}}
 * Dashboard도 제공하네요.　Custom Dashboards는 Business플랜부터 가능하네요.
 {{< img src="/images/2021/0415/springboot-sentry.png" alt="springboot-sentry" link="/images/2021/0415/springboot-sentry.png">}}
 

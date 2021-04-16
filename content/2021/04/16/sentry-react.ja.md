@@ -23,50 +23,50 @@ author: "bokyung"
   ```
 * index.jsにSentryを初期化するコードを追加します。
   ```
-    import React from "react";
-    import ReactDOM from "react-dom";
-    import * as Sentry from "@sentry/react";
-    import { Integrations } from "@sentry/tracing";
-    import App from "./App";
-    import "./index.css";
-    Sentry.init({
-        // 全ての環境に設定時
-        dsn: "https://xxxxxxxxxxxxxxxxxxxxxxxxxxx@xxxxxx.ingest.sentry.io/xxxxx",
-        // productionのみ設定時
-        dsn: process.env.NODE_ENV === "production"
-            ? "https://xxxxxxxxxxxxxxxxxxxxxxxxxxx@xxxxxx.ingest.sentry.io/xxxxx"
-            : false,
-        integrations: [new Integrations.BrowserTracing()],
-        environment: process.env.NODE_ENV,
-        tracesSampleRate: 1.0,
-    });
+  import React from "react";
+  import ReactDOM from "react-dom";
+  import * as Sentry from "@sentry/react";
+  import { Integrations } from "@sentry/tracing";
+  import App from "./App";
+  import "./index.css";
+  Sentry.init({
+      // 全ての環境に設定時
+      dsn: "https://xxxxxxxxxxxxxxxxxxxxxxxxxxx@xxxxxx.ingest.sentry.io/xxxxx",
+      // productionのみ設定時
+      dsn: process.env.NODE_ENV === "production"
+          ? "https://xxxxxxxxxxxxxxxxxxxxxxxxxxx@xxxxxx.ingest.sentry.io/xxxxx"
+          : false,
+      integrations: [new Integrations.BrowserTracing()],
+      environment: process.env.NODE_ENV,
+      tracesSampleRate: 1.0,
+  });
 
-    ReactDOM.render(
-        <React.StrictMode>
-            <App />
-        </React.StrictMode>,
-        document.getElementById("root")
-    );
+  ReactDOM.render(
+      <React.StrictMode>
+          <App />
+      </React.StrictMode>,
+      document.getElementById("root")
+  );
   ```
 * Sentryへエラーを送るための設定
   * api実行時、エラーが発生したらsentryにエラーを送るように追加しました。
     ```
-      import * as Sentry from "@sentry/react";
-      ...
-      ...
-      useEffect(() => {
-        fetchPost();
-      },[]);
+    import * as Sentry from "@sentry/react";
+    ...
+    ...
+    useEffect(() => {
+      fetchPost();
+    },[]);
 
-      const fetchPost = () => {
-          PostDataService.getPost(id)
-            .then(response => {
-                setCurrentPost(response.data);
-             })
-            .catch(e => {
-                Sentry.captureException(e);
-            });
-      };
+    const fetchPost = () => {
+        PostDataService.getPost(id)
+          .then(response => {
+              setCurrentPost(response.data);
+            })
+          .catch(e => {
+              Sentry.captureException(e);
+          });
+    };
     ```
 
 ## エラーを発生させ、Sentry側を確認

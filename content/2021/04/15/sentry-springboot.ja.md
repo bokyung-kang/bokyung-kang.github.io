@@ -24,12 +24,15 @@ react.jsへSentryを適用しようと思い、公式ドキュメントを見て
 * application.properties에 DSN (Data Source Name)を設定します。
   * application.properties
     ```
+    # DSN設定
     sentry.dsn=https://xxxxxxxxxxxxxxxxxxxxxxxxxxx@xxxxxx.ingest.sentry.io/xxxxx
+    # エラートレース設定
+    sentry.enable-tracing=true
     ```
   * application-development.properties
     ```
-      # 各環境の設定も可能です。
-      sentry.environment=development
+    # 各環境の設定も可能です。
+    sentry.environment=development
     ```
 
 * Sentryにエラーを送るための設定
@@ -64,10 +67,11 @@ react.jsへSentryを適用しようと思い、公式ドキュメントを見て
     }
     ```
 
-## エラー発生
+## エラーを発生させ、Sentry側を確認
 * Content typeを追加し、エラーを発生させてみました。
 {{< img src="/images/2021/0415/springboot-error.png" alt="springboot-error" link="/images/2021/0415/springboot-error.png">}}
-
+* Search by Traceをクリックするとエラートレースも可能です。
+{{< img src="/images/2021/0415/springboot-error-trace.png" alt="springboot-error-trace" link="/images/2021/0415/springboot-error-trace.png">}}
 * Dashboardも提供しています。カスタムDashboardはBusinessプランから使えるそうです。
 {{< img src="/images/2021/0415/springboot-sentry.png" alt="springboot-sentry" link="/images/2021/0415/springboot-sentry.png">}}
 

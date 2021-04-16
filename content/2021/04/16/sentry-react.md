@@ -23,50 +23,50 @@ author: "bokyung"
   ```
 * index.js에 Sentry를 초기화해주는 코드를 추가합니다.
   ```
-    import React from "react";
-    import ReactDOM from "react-dom";
-    import * as Sentry from "@sentry/react";
-    import { Integrations } from "@sentry/tracing";
-    import App from "./App";
-    import "./index.css";
-    Sentry.init({
-        // 모든환경에 설정할 경우
-        dsn: "https://xxxxxxxxxxxxxxxxxxxxxxxxxxx@xxxxxx.ingest.sentry.io/xxxxx",
-        // production환경만 설정할 경우
-        dsn: process.env.NODE_ENV === "production"
-            ? "https://xxxxxxxxxxxxxxxxxxxxxxxxxxx@xxxxxx.ingest.sentry.io/xxxxx"
-            : false,
-        integrations: [new Integrations.BrowserTracing()],
-        environment: process.env.NODE_ENV,
-        tracesSampleRate: 1.0,
-    });
+  import React from "react";
+  import ReactDOM from "react-dom";
+  import * as Sentry from "@sentry/react";
+  import { Integrations } from "@sentry/tracing";
+  import App from "./App";
+  import "./index.css";
+  Sentry.init({
+      // 모든환경에 설정할 경우
+      dsn: "https://xxxxxxxxxxxxxxxxxxxxxxxxxxx@xxxxxx.ingest.sentry.io/xxxxx",
+      // production환경만 설정할 경우
+      dsn: process.env.NODE_ENV === "production"
+          ? "https://xxxxxxxxxxxxxxxxxxxxxxxxxxx@xxxxxx.ingest.sentry.io/xxxxx"
+          : false,
+      integrations: [new Integrations.BrowserTracing()],
+      environment: process.env.NODE_ENV,
+      tracesSampleRate: 1.0,
+  });
 
-    ReactDOM.render(
-        <React.StrictMode>
-            <App />
-        </React.StrictMode>,
-        document.getElementById("root")
-    );
+  ReactDOM.render(
+      <React.StrictMode>
+          <App />
+      </React.StrictMode>,
+      document.getElementById("root")
+  );
   ```
 * Sentry에 에러를 보내기 위한 설정
   * api실행 중 에러가 발생하면 sentry에 에러를 보내도록 추가했습니다.
     ```
-      import * as Sentry from "@sentry/react";
-      ...
-      ...
-      useEffect(() => {
-        fetchPost();
-      },[]);
+    import * as Sentry from "@sentry/react";
+    ...
+    ...
+    useEffect(() => {
+      fetchPost();
+    },[]);
 
-      const fetchPost = () => {
-          PostDataService.getPost(id)
-            .then(response => {
-                setCurrentPost(response.data);
-             })
-            .catch(e => {
-                Sentry.captureException(e);
-            });
-      };
+    const fetchPost = () => {
+        PostDataService.getPost(id)
+          .then(response => {
+              setCurrentPost(response.data);
+            })
+          .catch(e => {
+              Sentry.captureException(e);
+          });
+    };
     ```
 
 ## 에러를 발생시켜 Sentry상세페이지 확인
