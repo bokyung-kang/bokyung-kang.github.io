@@ -76,8 +76,9 @@ react.js에 Sentry를 적용하려고 찾아보던 중에 스프링부트도 대
 {{< img src="/images/2021/0415/springboot-sentry.png" alt="springboot-sentry" link="/images/2021/0415/springboot-sentry.png">}}
 
 ## slack에 통지
-* slack이나 타 서비스와 연계하려면 `Team`플랜부터 가능하네요.
+* slack이나 타 서비스와 연계하려면 `Team`플랜부터 가능하네요. slack에 메세지만 통지하는 용도라면 sentry의 `WebHooks`를 이용하면 `Developer(무료)`플랜으로도 사용가능합니다.
 {{< img src="/images/2021/0415/sentry-slack.png" alt="sentry-slack" link="/images/2021/0415/sentry-slack.png">}}
+
 
 Business플랜이면 Amazon SQS에 데이터 전송도 가능하다니 편리할 것 같습니다.
 나중에 [공식사이트](https://docs.sentry.io/platforms/java/guides/spring-boot/)를 꼼꼼히 살펴보아야겠습니다.

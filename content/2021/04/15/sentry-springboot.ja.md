@@ -76,7 +76,7 @@ react.jsへSentryを適用しようと思い、公式ドキュメントを見て
 {{< img src="/images/2021/0415/springboot-sentry.png" alt="springboot-sentry" link="/images/2021/0415/springboot-sentry.png">}}
 
 ## slackへ通知
-* slackとか他のサービスと連携するためには、`Team`プランにする必要があります。
+* slackとか他のサービスと連携するためには、`Team`プランにする必要があります。slackへのメッセージ通知のみならsentryの`WebHooks`を利用すれば`Developer(無料)`ブランでも利用可能です。
 {{< img src="/images/2021/0415/sentry-slack.png" alt="sentry-slack" link="/images/2021/0415/sentry-slack.png">}}
 
 Businessプランの場合、Amazon SQSへデータ転送もできると書いてあるので、便利そうです。
