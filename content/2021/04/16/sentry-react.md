@@ -13,6 +13,8 @@ author: "bokyung"
   * @sentry/react 6.2.5
   * @sentry/tracing 6.2.5 
 
+{{< adsense >}}
+
 ## Sentry에 프로젝트 추가 및 설정
 * Sentry에 로그인 후 프로젝트를 생성합니다.
 * Client Keys (DSN)메뉴에 있는 DSN키를 복사해둡니다.
@@ -48,6 +50,8 @@ author: "bokyung"
       document.getElementById("root")
   );
   ```
+
+
 * Sentry에 에러를 보내기 위한 설정
   * api실행 중 에러가 발생하면 sentry에 에러를 보내도록 추가했습니다.
     ```
@@ -68,6 +72,7 @@ author: "bokyung"
           });
     };
     ```
+{{< adsense >}}
 
 ## 에러를 발생시켜 Sentry상세페이지 확인
 * 404에러를 발생시켜보겠습니다.
