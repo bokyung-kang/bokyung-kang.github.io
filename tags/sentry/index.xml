@@ -13,7 +13,10 @@
       
       <guid>https://bokyung.dev/2021/04/16/sentry-react/</guid>
       <description>공식사이트 를 보면서 react.js에 Sentry를 적용해 보았습니다.
-버전  react 17.0.1 Sentry  @sentry/react 6.2.5 @sentry/tracing 6.2.5    Sentry에 프로젝트 추가 및 설정  Sentry에 로그인 후 프로젝트를 생성합니다. Client Keys (DSN)메뉴에 있는 DSN키를 복사해둡니다.    sentry 패키지 인스톨 npm install --save @sentry/react @sentry/tracing  index.js에 Sentry를 초기화해주는 코드를 추가합니다. import React from &amp;quot;react&amp;quot;; import ReactDOM from &amp;quot;react-dom&amp;quot;; import * as Sentry from &amp;quot;@sentry/react&amp;quot;; import { Integrations } from &amp;quot;@sentry/tracing&amp;quot;; import App from &amp;quot;.</description>
+버전  react 17.0.1 Sentry  @sentry/react 6.2.5 @sentry/tracing 6.2.5       (adsbygoogle = window.adsbygoogle || []).push({});  Sentry에 프로젝트 추가 및 설정   Sentry에 로그인 후 프로젝트를 생성합니다.
+  Client Keys (DSN)메뉴에 있는 DSN키를 복사해둡니다.     sentry 패키지 인스톨
+npm install --save @sentry/react @sentry/tracing   index.js에 Sentry를 초기화해주는 코드를 추가합니다.
+import React from &amp;quot;react&amp;quot;; import ReactDOM from &amp;quot;react-dom&amp;quot;; import * as Sentry from &amp;quot;@sentry/react&amp;quot;; import { Integrations } from &amp;quot;@sentry/tracing&amp;quot;; import App from &amp;quot;.</description>
     </item>
     
     <item>
