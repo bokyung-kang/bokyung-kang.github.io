@@ -20,7 +20,9 @@
       {{- end }}
     </div>
     {{- end }}
-    {{ partial "displayunit_top.html" . }}
+    <div class="ad-box" >
+      {{ partial "displayunit_top.html" . }}
+    </div>
     <h1 class="post-title">
       {{ .Title }}
       {{- if .Draft }}<div class="entry-isdraft"><sup>&nbsp;&nbsp;[draft]</sup></div>{{- end }}
@@ -102,7 +104,9 @@
     {{- if (and .Site.Params.ShowShareButtons (ne .Params.disableShare true) ) }}
     {{- partial "share_icons.html" . }}
     {{- end }}
-    {{ partial "displayunit_bottom.html" . }}
+    <div class="ad-box" >
+      {{ partial "displayunit_bottom.html" . }}
+    </div>
   </footer>
 
   {{- if (.Param "comments") }}

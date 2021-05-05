@@ -4,7 +4,9 @@
 {{- partial "index_profile.html" . }}
 {{- else }} {{/* if not profileMode */}}
 
-{{ partial "displayunit_list_top.html" . }}
+<div class="ad-box" >
+  {{ partial "displayunit_list_top.html" . }}
+</div>
 
 {{- if not .IsHome | and .Title }}
 <header class="page-header">
@@ -73,7 +75,9 @@
 </footer>
 {{- end }}
 
-{{ partial "displayunit_list_bottom.html" . }}
+<div class="ad-box" >
+  {{ partial "displayunit_list_bottom.html" . }}
+</div>
 
 {{end}}{{/* end profileMode */}}
 {{- end  }}{{- /* end main */ -}}
