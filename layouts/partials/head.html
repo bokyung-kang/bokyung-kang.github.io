@@ -77,10 +77,10 @@
 {{- partial "extend_head.html" . -}}
 <!-- Misc -->
 {{- if hugo.IsProduction | or (eq .Site.Params.env "production") }}
-{{- template "partials/analytics.html" . }}
 {{- template "partials/templates/opengraph.html" . }}
 {{- template "partials/templates/twitter_cards.html" . }}
 {{- template "partials/templates/schema_json.html" . }}
+{{- template "partials/analytics.html" . }}
+{{- template "partials/adsense.html" . }}
 {{- end }}
-<script data-ad-client="ca-pub-8342838924011258" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8342838924011258" crossorigin="anonymous"></script>
+
