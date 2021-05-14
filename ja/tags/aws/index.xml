@@ -5,7 +5,18 @@
     <link>https://bokyung.dev/ja/tags/aws/</link>
     <description>Recent content in AWS on Bokyung&#39;s Note</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 31 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung.dev/ja/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung.dev/ja/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CloudFrontとLambda@Edgeを利用して画像をリサイズさせる。</title>
+      <link>https://bokyung.dev/ja/2021/05/14/lambda-edge-resize/</link>
+      <pubDate>Fri, 14 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bokyung.dev/ja/2021/05/14/lambda-edge-resize/</guid>
+      <description>リサイズされた画像をS3へ保存せずに、原本のみ利用してリサイズさせる方法がないか調べてみましたが、Lambda@Edgeを利用してリサイズさせる方法があったので、試してみました。
+Lambda@Edge動作概要    Lambda@EdgeはCloudFrontへアクセスする時に実行されるLambdaの拡張版です。 CloudFrontイベント発生時、Lambda関数の実行が可能です。 イベントには４種類があります。
+ Viewer Request : CloudFrontがビューアーからのリクエストを受け、リクエストしたオブジェクトがedge cacheにあるかを確認する前に関数を実行します。 Origin Request : CloudFrontがオリジンにリクエストを渡す場合のみ実行されます。 リクエストしたオブジェクトがedge cacheにある場合は関数は実行されません。 Origin Response : CloudFrontがオリジンからレスポンスを受け取った後、レスポンスへオブジェクトをcacheする前に関数を実行します。 Viewer Response : リクエストしたオブジェクトをビューアーに返却する前に実行されます。 この関数は、オブジェクトがedge cacheに既に存在しているか否かに関わらず実行されます。  Lambda@Edge 注意点  環境変数は利用不可 us-east-1 リージョンのみ対応 イベントタイプによって異なるクォータ    Entity Origin request and response event quotas Viewer request and response event quotas     Function memory size Same as Lambda quotas（128 MB to 10,240 MB） 128 MB   Function timeout 30 seconds 5 seconds   Size of a response 1 MB 40 KB   Maximum compressed size of a Lambda function and any included libraries 50 MB 1 MB      イメージリサイジング処理実装 イメージリサイジング処理の流れ Origin Responseイベント発生時、Lambda@Edge関数を実行する方法を利用しました。</description>
+    </item>
+    
     <item>
       <title>Jenkins環境でSpring Batch Jobを実行する</title>
       <link>https://bokyung.dev/ja/2021/03/31/jenkins-batch-job/</link>

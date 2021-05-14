@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://bokyung.dev/ja/2021/</loc>
-    <lastmod>2021-04-16T00:00:00+00:00</lastmod>
+    <lastmod>2021-05-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -15,8 +15,21 @@
                 href="https://bokyung.dev/ja/2021/"
                 />
   </url><url>
+    <loc>https://bokyung.dev/ja/tags/aws/</loc>
+    <lastmod>2021-05-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://bokyung.dev/tags/aws/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bokyung.dev/ja/tags/aws/"
+                />
+  </url><url>
     <loc>https://bokyung.dev/ja/</loc>
-    <lastmod>2021-04-16T00:00:00+00:00</lastmod>
+    <lastmod>2021-05-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -26,6 +39,58 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://bokyung.dev/ja/"
+                />
+  </url><url>
+    <loc>https://bokyung.dev/ja/tags/cloudfront/</loc>
+    <lastmod>2021-05-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://bokyung.dev/tags/cloudfront/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bokyung.dev/ja/tags/cloudfront/"
+                />
+  </url><url>
+    <loc>https://bokyung.dev/ja/2021/05/14/lambda-edge-resize/</loc>
+    <lastmod>2021-05-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://bokyung.dev/2021/05/14/lambda-edge-resize/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bokyung.dev/ja/2021/05/14/lambda-edge-resize/"
+                />
+  </url><url>
+    <loc>https://bokyung.dev/ja/tags/lambdaedge/</loc>
+    <lastmod>2021-05-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://bokyung.dev/tags/lambdaedge/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bokyung.dev/ja/tags/lambdaedge/"
+                />
+  </url><url>
+    <loc>https://bokyung.dev/ja/tags/</loc>
+    <lastmod>2021-05-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://bokyung.dev/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bokyung.dev/ja/tags/"
                 />
   </url><url>
     <loc>https://bokyung.dev/ja/tags/react.js/</loc>
@@ -65,19 +130,6 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://bokyung.dev/ja/2021/04/16/sentry-react/"
-                />
-  </url><url>
-    <loc>https://bokyung.dev/ja/tags/</loc>
-    <lastmod>2021-04-16T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://bokyung.dev/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://bokyung.dev/ja/tags/"
                 />
   </url><url>
     <loc>https://bokyung.dev/ja/tags/flyway/</loc>
@@ -130,19 +182,6 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://bokyung.dev/ja/tags/spring/"
-                />
-  </url><url>
-    <loc>https://bokyung.dev/ja/tags/aws/</loc>
-    <lastmod>2021-03-31T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://bokyung.dev/tags/aws/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://bokyung.dev/ja/tags/aws/"
                 />
   </url><url>
     <loc>https://bokyung.dev/ja/tags/jenkins/</loc>
