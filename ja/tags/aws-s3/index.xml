@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AWS S3 on Bokyung&#39;s Note</title>
+    <link>https://bokyung.dev/ja/tags/aws-s3/</link>
+    <description>Recent content in AWS S3 on Bokyung&#39;s Note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 17 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung.dev/ja/tags/aws-s3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS SAMを利用して、Lambda関数デプロイする</title>
+      <link>https://bokyung.dev/ja/2021/05/17/lambda-sam-deploy/</link>
+      <pubDate>Mon, 17 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bokyung.dev/ja/2021/05/17/lambda-sam-deploy/</guid>
+      <description>前のPostにCloudFrontとLambda@Edgeを利用して画像をリサイズさせる 方法に関する内容がありましたが、AWS SAMを利用してCloudFormationでLambda関数をデプロイする方法をまとめてみました。
+デプロイ順番 SAM CLIインストール Install SAM CLI 
+私は SAM CLI, version 1.23.0を利用しました。
+template.yaml作成 CloudFormation基盤のテンプレート(template.yaml)を作成します。
+. ├── index.js ├── node_modules/ ├── template.yaml ├── package-lock.json └── package.json  SAM deployを利用した、コードのパッケージングとデプロイ SAM deploy \  --template-file template.yaml \  # Lambda@edgeの場合はus-east-1リージョンに作成したBucketが必要です。 --s3-bucket &amp;lt;zipファイルをアップロードするBucket name&amp;gt; \  --s3-prefix SAM \  --stack-name &amp;lt;cloudformation スタック名&amp;gt; \  --capabilities CAPABILITY_NAMED_IAM \  --region &amp;lt;cloudformationをデプロイするリージョン名&amp;gt; \  --profile &amp;lt;profile name&amp;gt; SAMはデプロイ時、
+ アプリケーションのコードを圧縮して、S3へアップロード CodeUriがS3 pathに変換されたCloudFormationテンプレートファイル作成、S3へアップロード S3にアップロードされたファイルを利用して、Cloudformationのスタック作成してデプロイ  Cloudformationコンソール上でTemplateの中身を確認するとCodeUriがS3のパスになっていることが確認できます。</description>
+    </item>
+    
+    <item>
+      <title>CloudFrontとLambda@Edgeを利用して画像をリサイズさせる</title>
+      <link>https://bokyung.dev/ja/2021/05/14/lambda-edge-resize/</link>
+      <pubDate>Fri, 14 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bokyung.dev/ja/2021/05/14/lambda-edge-resize/</guid>
+      <description>リサイズされた画像をS3へ保存せずに、原本のみ利用してリサイズさせる方法がないか調べてみましたが、Lambda@Edgeを利用してリサイズさせる方法があったので、試してみました。
+Lambda@Edge動作概要    Lambda@EdgeはCloudFrontへアクセスする時に実行されるLambdaの拡張版です。 CloudFrontイベント発生時、Lambda関数の実行が可能です。 イベントには４種類があります。
+ Viewer Request : CloudFrontがビューアーからのリクエストを受け、リクエストしたオブジェクトがedge cacheにあるかを確認する前に関数を実行します。 Origin Request : CloudFrontがオリジンにリクエストを渡す場合のみ実行されます。 リクエストしたオブジェクトがedge cacheにある場合は関数は実行されません。 Origin Response : CloudFrontがオリジンからレスポンスを受け取った後、レスポンスへオブジェクトをcacheする前に関数を実行します。 Viewer Response : リクエストしたオブジェクトをビューアーに返却する前に実行されます。 この関数は、オブジェクトがedge cacheに既に存在しているか否かに関わらず実行されます。  Lambda@Edge 注意点  環境変数は利用不可 us-east-1 リージョンのみ対応 イベントタイプによって異なるクォータ    Entity Origin request and response event quotas Viewer request and response event quotas     Function memory size Same as Lambda quotas（128 MB to 10,240 MB） 128 MB   Function timeout 30 seconds 5 seconds   Size of a response 1 MB 40 KB   Maximum compressed size of a Lambda function and any included libraries 50 MB 1 MB      イメージリサイジング処理実装 イメージリサイジング処理の流れ Origin Responseイベント発生時、Lambda@Edge関数を実行する方法を利用しました。</description>
+    </item>
+    
+  </channel>
+</rss>

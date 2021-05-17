@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://bokyung.dev/ja/2021/</loc>
-    <lastmod>2021-05-14T00:00:00+00:00</lastmod>
+    <lastmod>2021-05-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://bokyung.dev/ja/tags/aws/</loc>
-    <lastmod>2021-05-14T00:00:00+00:00</lastmod>
+    <lastmod>2021-05-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -28,8 +28,60 @@
                 href="https://bokyung.dev/ja/tags/aws/"
                 />
   </url><url>
+    <loc>https://bokyung.dev/ja/tags/aws-lambda/</loc>
+    <lastmod>2021-05-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://bokyung.dev/tags/aws-lambda/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bokyung.dev/ja/tags/aws-lambda/"
+                />
+  </url><url>
+    <loc>https://bokyung.dev/ja/tags/aws-s3/</loc>
+    <lastmod>2021-05-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://bokyung.dev/tags/aws-s3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bokyung.dev/ja/tags/aws-s3/"
+                />
+  </url><url>
+    <loc>https://bokyung.dev/ja/tags/aws-sam/</loc>
+    <lastmod>2021-05-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://bokyung.dev/tags/aws-sam/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bokyung.dev/ja/tags/aws-sam/"
+                />
+  </url><url>
+    <loc>https://bokyung.dev/ja/2021/05/17/lambda-sam-deploy/</loc>
+    <lastmod>2021-05-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://bokyung.dev/2021/05/17/lambda-sam-deploy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bokyung.dev/ja/2021/05/17/lambda-sam-deploy/"
+                />
+  </url><url>
     <loc>https://bokyung.dev/ja/</loc>
-    <lastmod>2021-05-14T00:00:00+00:00</lastmod>
+    <lastmod>2021-05-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -41,17 +93,43 @@
                 href="https://bokyung.dev/ja/"
                 />
   </url><url>
-    <loc>https://bokyung.dev/ja/tags/cloudfront/</loc>
-    <lastmod>2021-05-14T00:00:00+00:00</lastmod>
+    <loc>https://bokyung.dev/ja/tags/</loc>
+    <lastmod>2021-05-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://bokyung.dev/tags/cloudfront/"
+                href="https://bokyung.dev/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://bokyung.dev/ja/tags/cloudfront/"
+                href="https://bokyung.dev/ja/tags/"
+                />
+  </url><url>
+    <loc>https://bokyung.dev/ja/tags/aws-cloudfront/</loc>
+    <lastmod>2021-05-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://bokyung.dev/tags/aws-cloudfront/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bokyung.dev/ja/tags/aws-cloudfront/"
+                />
+  </url><url>
+    <loc>https://bokyung.dev/ja/tags/aws-lambdaedge/</loc>
+    <lastmod>2021-05-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://bokyung.dev/tags/aws-lambdaedge/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bokyung.dev/ja/tags/aws-lambdaedge/"
                 />
   </url><url>
     <loc>https://bokyung.dev/ja/2021/05/14/lambda-edge-resize/</loc>
@@ -67,30 +145,17 @@
                 href="https://bokyung.dev/ja/2021/05/14/lambda-edge-resize/"
                 />
   </url><url>
-    <loc>https://bokyung.dev/ja/tags/lambdaedge/</loc>
+    <loc>https://bokyung.dev/ja/tags/image-resizing/</loc>
     <lastmod>2021-05-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://bokyung.dev/tags/lambdaedge/"
+                href="https://bokyung.dev/tags/image-resizing/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="https://bokyung.dev/ja/tags/lambdaedge/"
-                />
-  </url><url>
-    <loc>https://bokyung.dev/ja/tags/</loc>
-    <lastmod>2021-05-14T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://bokyung.dev/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://bokyung.dev/ja/tags/"
+                href="https://bokyung.dev/ja/tags/image-resizing/"
                 />
   </url><url>
     <loc>https://bokyung.dev/ja/tags/react.js/</loc>
@@ -249,6 +314,19 @@
                 href="https://bokyung.dev/ja/2021/03/17/jenkins-install/"
                 />
   </url><url>
+    <loc>https://bokyung.dev/ja/tags/aws-ecs/</loc>
+    <lastmod>2021-02-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://bokyung.dev/tags/aws-ecs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://bokyung.dev/ja/tags/aws-ecs/"
+                />
+  </url><url>
     <loc>https://bokyung.dev/ja/tags/circleci/</loc>
     <lastmod>2021-02-02T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -273,19 +351,6 @@
                 rel="alternate"
                 hreflang="ja"
                 href="https://bokyung.dev/ja/2021/02/02/clrcleci-ecs-deploy/"
-                />
-  </url><url>
-    <loc>https://bokyung.dev/ja/tags/ecs/</loc>
-    <lastmod>2021-02-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://bokyung.dev/tags/ecs/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://bokyung.dev/ja/tags/ecs/"
                 />
   </url><url>
     <loc>https://bokyung.dev/ja/archives/</loc>

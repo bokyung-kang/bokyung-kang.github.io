@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AWS CloudFront on Bokyung&#39;s Note</title>
+    <link>https://bokyung.dev/tags/aws-cloudfront/</link>
+    <description>Recent content in AWS CloudFront on Bokyung&#39;s Note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 14 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung.dev/tags/aws-cloudfront/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CloudFront와 Lambda@Edge를 이용해서 이미지 리사이징하기</title>
+      <link>https://bokyung.dev/2021/05/14/lambda-edge-resize/</link>
+      <pubDate>Fri, 14 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bokyung.dev/2021/05/14/lambda-edge-resize/</guid>
+      <description>리사이징 된 이미지를 S3에 저장하지 않고 원본만 이용해서 리사이징 하는 방법은 없을까 고민하던차에 Lambda@Edge를 이용해서 이미지 리사이징 하는 방법을 적용해 보았습니다.
+Lambda@Edge 동작 원리    Lambda@Edge는 CloudFront에 접근할 때 실행되는 Lambda의 확장판입니다. CloudFront 이벤트가 발생할 때 Lambda 함수를 실행할 수 있습니다. 이벤트는 4가지가 있습니다.
+ Viewer Request : CloudFront가 뷰어로부터 요청을 받고 요청한 개체가 edge cache에 있는지 확인하기 전에 함수를 실행합니다. Origin Request : CloudFront가 오리진으로 요청을 전달할 때만 실행됩니다.</description>
+    </item>
+    
+  </channel>
+</rss>

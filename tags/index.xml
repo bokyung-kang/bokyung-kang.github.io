@@ -5,31 +5,67 @@
     <link>https://bokyung.dev/tags/</link>
     <description>Recent content in Tags on Bokyung&#39;s Note</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 14 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bokyung.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AWS</title>
       <link>https://bokyung.dev/tags/aws/</link>
-      <pubDate>Fri, 14 May 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 17 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://bokyung.dev/tags/aws/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>CloudFront</title>
-      <link>https://bokyung.dev/tags/cloudfront/</link>
-      <pubDate>Fri, 14 May 2021 00:00:00 +0000</pubDate>
+      <title>AWS Lambda</title>
+      <link>https://bokyung.dev/tags/aws-lambda/</link>
+      <pubDate>Mon, 17 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bokyung.dev/tags/cloudfront/</guid>
+      <guid>https://bokyung.dev/tags/aws-lambda/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Lambda@Edge</title>
-      <link>https://bokyung.dev/tags/lambdaedge/</link>
+      <title>AWS S3</title>
+      <link>https://bokyung.dev/tags/aws-s3/</link>
+      <pubDate>Mon, 17 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bokyung.dev/tags/aws-s3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS SAM</title>
+      <link>https://bokyung.dev/tags/aws-sam/</link>
+      <pubDate>Mon, 17 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bokyung.dev/tags/aws-sam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS CloudFront</title>
+      <link>https://bokyung.dev/tags/aws-cloudfront/</link>
       <pubDate>Fri, 14 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bokyung.dev/tags/lambdaedge/</guid>
+      <guid>https://bokyung.dev/tags/aws-cloudfront/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS Lambda@Edge</title>
+      <link>https://bokyung.dev/tags/aws-lambdaedge/</link>
+      <pubDate>Fri, 14 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bokyung.dev/tags/aws-lambdaedge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Image Resizing</title>
+      <link>https://bokyung.dev/tags/image-resizing/</link>
+      <pubDate>Fri, 14 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bokyung.dev/tags/image-resizing/</guid>
       <description></description>
     </item>
     
@@ -88,20 +124,20 @@
     </item>
     
     <item>
+      <title>AWS ECS</title>
+      <link>https://bokyung.dev/tags/aws-ecs/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bokyung.dev/tags/aws-ecs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>circleci</title>
       <link>https://bokyung.dev/tags/circleci/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://bokyung.dev/tags/circleci/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ECS</title>
-      <link>https://bokyung.dev/tags/ecs/</link>
-      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://bokyung.dev/tags/ecs/</guid>
       <description></description>
     </item>
     
