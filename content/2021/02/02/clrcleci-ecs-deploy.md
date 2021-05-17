@@ -1,7 +1,7 @@
 ---
 title: "CircleCI의 Contexts를 이용하여 AWS ECS 자동 배포하기"
 date: "2021-02-02"
-tags: ["circleci", "AWS", "ECS"]
+tags: ["circleci", "AWS", "AWS ECS"]
 author: "bokyung"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "CircleCIのContextsを利用し、AWS ECSへデプロイする"
 date: "2021-02-02"
-tags: ["circleci", "AWS", "ECS"]
+tags: ["circleci", "AWS", "AWS ECS"]
 author: "bokyung"
 ---
 

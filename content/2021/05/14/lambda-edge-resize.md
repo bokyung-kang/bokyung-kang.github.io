@@ -1,7 +1,7 @@
 ---
 title: "CloudFront와 Lambda@Edge를 이용해서 이미지 리사이징하기"
 date: "2021-05-14"
-tags: ["AWS", "CloudFront", "Lambda@Edge"]
+tags: ["AWS", "AWS CloudFront", "AWS Lambda@Edge", "Image Resizing", "AWS S3"]
 author: "bokyung"
 ---
 

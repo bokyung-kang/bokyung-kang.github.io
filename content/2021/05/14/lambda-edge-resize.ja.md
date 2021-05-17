@@ -1,7 +1,7 @@
 ---
-title: "CloudFrontとLambda@Edgeを利用して画像をリサイズさせる。"
+title: "CloudFrontとLambda@Edgeを利用して画像をリサイズさせる"
 date: "2021-05-14"
-tags: ["AWS", "CloudFront", "Lambda@Edge"]
+tags: ["AWS", "AWS CloudFront", "AWS Lambda@Edge", "Image Resizing", "AWS S3"]
 author: "bokyung"
 ---
 
